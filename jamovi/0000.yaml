@@ -1,0 +1,227 @@
+---
+title: Difference-in-Differences Family
+name: didfamily
+version: 1.0.0
+jms: '1.0'
+authors:
+  - Mingchao Sun
+maintainer: Mingchao Sun <mingchao.sun@hotmail.com>
+date: '2026-11-20'
+type: R
+description: >-
+  Compare difference-in-differences estimators side by side: TWFE,
+  Callaway-Sant'Anna, Sun-Abraham, Borusyak-Jaravel-Spiess, Gardner and stacked
+  DiD, with panel diagnostics, classic 2x2 DiD, Goodman-Bacon decomposition,
+  TWFE weights, pre-trend tests, HonestDiD, triple differences, continuous
+  treatment and reproducible R code.
+analyses:
+  - title: Panel Structure Check
+    name: didsetup
+    ns: didfamily
+    category: analyses
+    menuGroup: DiD
+    menuTitle: Panel Structure Check
+    description: >-
+      Checks a panel before estimation (balance, duplicates, gaps, missing
+      values, absorbing treatment, cohorts) and plots treatment status by unit
+      and period.
+  - title: Classic DiD (2x2)
+    name: did22
+    ns: didfamily
+    category: analyses
+    menuGroup: DiD
+    menuTitle: Classic DiD (2x2)
+    description: >-
+      Classic two-group, two-period difference-in-differences: group means,
+      regression DiD and doubly robust, IPW and outcome-regression estimators.
+  - title: Two-Way Fixed Effects (TWFE)
+    name: didtwfe
+    ns: didfamily
+    category: analyses
+    menuGroup: DiD
+    menuSubgroup: Estimators
+    menuTitle: Two-Way Fixed Effects (TWFE)
+    description: >-
+      Two-way fixed effects regression of the outcome on the treatment indicator
+      with unit and period fixed effects, static and event study, with a warning
+      that TWFE can be biased under staggered adoption.
+  - title: Callaway & Sant'Anna
+    name: didcs
+    ns: didfamily
+    category: analyses
+    menuGroup: DiD
+    menuSubgroup: Estimators
+    menuTitle: Callaway & Sant'Anna
+    description: >-
+      Callaway and Sant'Anna group-time effects with never-treated or
+      not-yet-treated controls, doubly robust, IPW or outcome-regression
+      estimation, multiplier bootstrap, and aggregation to overall, event-time,
+      cohort and calendar effects.
+  - title: Sun & Abraham
+    name: didsa
+    ns: didfamily
+    category: analyses
+    menuGroup: DiD
+    menuSubgroup: Estimators
+    menuTitle: Sun & Abraham
+    description: >-
+      Sun and Abraham interaction-weighted estimator with cohort-by-event-time
+      effects and never-treated controls, with overall and event-study effects.
+  - title: Borusyak, Jaravel & Spiess (Imputation)
+    name: didbjs
+    ns: didfamily
+    category: analyses
+    menuGroup: DiD
+    menuSubgroup: Estimators
+    menuTitle: Borusyak, Jaravel & Spiess (Imputation)
+    description: >-
+      Borusyak, Jaravel and Spiess imputation estimator: unit and period effects
+      are fitted on untreated observations and used to impute treated
+      counterfactuals, with a pre-trend test on untreated observations.
+  - title: Gardner Two-Stage (did2s)
+    name: didgardner
+    ns: didfamily
+    category: analyses
+    menuGroup: DiD
+    menuSubgroup: Estimators
+    menuTitle: Gardner Two-Stage (did2s)
+    description: >-
+      Gardner two-stage difference-in-differences: untreated outcomes are
+      residualised on unit and period effects, then regressed on treatment, with
+      corrected clustered standard errors.
+  - title: Stacked DiD
+    name: didstacked
+    ns: didfamily
+    category: analyses
+    menuGroup: DiD
+    menuSubgroup: Estimators
+    menuTitle: Stacked DiD
+    description: >-
+      Stacked difference-in-differences: one sub-experiment per treatment cohort
+      with clean controls, stacked with unit-by-experiment and
+      period-by-experiment fixed effects.
+  - title: Compare DiD Estimators
+    name: didcompare
+    ns: didfamily
+    category: analyses
+    menuGroup: DiD
+    menuSubgroup: Compare
+    menuTitle: Compare DiD Estimators
+    description: >-
+      Compares difference-in-differences estimators on one panel: two-way fixed
+      effects, Callaway and Sant'Anna, Sun and Abraham, Borusyak-Jaravel-Spiess,
+      Gardner and stacked DiD, with overall and event-study effects.
+  - title: Bacon, Pre-trend and HonestDiD
+    name: didiag
+    ns: didfamily
+    category: analyses
+    menuGroup: DiD
+    menuSubgroup: Diagnostics and extensions
+    menuTitle: Bacon, Pre-trend and HonestDiD
+    description: >-
+      Diagnostics for staggered-adoption designs: Goodman-Bacon decomposition,
+      TWFE weights, joint pre-trend tests and HonestDiD sensitivity analysis.
+  - title: Continuous Treatment DiD
+    name: dosedid
+    ns: didfamily
+    category: analyses
+    menuGroup: DiD
+    menuSubgroup: Diagnostics and extensions
+    menuTitle: Continuous Treatment DiD
+    description: >-
+      Difference-in-differences with a continuous treatment: dose-response
+      ATT(d) and the marginal effect ACRT(d) with their averages.
+  - title: Triple Differences (DDD)
+    name: dddcompare
+    ns: didfamily
+    category: analyses
+    menuGroup: DiD
+    menuSubgroup: Diagnostics and extensions
+    menuTitle: Triple Differences (DDD)
+    description: >-
+      Triple differences with an eligibility variable, shown next to
+      difference-in-differences on eligible-only and ineligible-only units.
+  - title: Dynamic DiD for Treatments that Switch
+    name: dcdh
+    ns: didfamily
+    category: analyses
+    menuGroup: DiD
+    menuSubgroup: Diagnostics and extensions
+    menuTitle: Treatment Switching On and Off
+    description: >-
+      Dynamic effects of a binary treatment that can switch on and off, with
+      placebo tests (de Chaisemartin and D'Haultfoeuille, 2024).
+    menuSubtitle: de Chaisemartin and D'Haultfoeuille
+  - title: Extended TWFE (Wooldridge)
+    name: didetwfe
+    ns: didfamily
+    category: analyses
+    menuGroup: DiD
+    menuSubgroup: Estimators
+    menuTitle: Extended TWFE (Wooldridge)
+    description: >-
+      Wooldridge's extended two-way fixed effects: cohort-by-period treatment
+      effects with covariates interacted with cohort, for linear, Poisson and
+      logit models, aggregated to an overall effect, an event study and effects
+      by cohort and calendar time.
+datasets:
+  - name: Castle Doctrine laws and homicide (Cheng & Hoekstra)
+    path: castle.omv
+    description: >-
+      50 US states 2000-2010; staggered adoption of castle doctrine laws, 29
+      states never treated. Compare DiD Estimators or DiD Diagnostics - outcome
+      l_homicide, unit state, period year, treatment post (indicator) or effyear
+      (first treated period, 0 = never); covariates population, income,
+      unemployrt, poverty, police; weights pop2000 (population in 2000). Source
+      - bacondecomp package, from Cheng and Hoekstra (2013).
+  - name: Minimum wage and teen employment (mpdta, Callaway & Sant'Anna)
+    path: mpdta.omv
+    description: >-
+      500 US counties 2003-2007, staggered minimum-wage increases. Compare DiD
+      Estimators - outcome lemp, unit countyreal, period year, treatment
+      first.treat with type First treated period (0 = never); covariate lpop.
+      Source - did package.
+  - name: Simulated staggered adoption
+    path: sim_staggered.omv
+    description: >-
+      600 units, 12 periods, three treatment cohorts with growing effects, so
+      TWFE is biased (true average effect on the treated about 1.7). Compare DiD
+      Estimators or DiD Diagnostics - outcome y, unit id, period year, treatment
+      D (indicator) or g (first treated period).
+  - name: Simulated two-period DiD
+    path: sim_2x2.omv
+    description: >-
+      2000 units observed before (2010) and after (2015) with trends that depend
+      on covariate x; true effect 1.5. Classic DiD (2x2) - outcome y, treated
+      group treated, period year, unit id id, covariates x and region.
+  - name: Simulated triple differences
+    path: sim_ddd.omv
+    description: >-
+      800 units in treated and untreated groups with a group-wide shock that
+      also hits ineligible units; true effect on eligible units about 1.49.
+      Triple Differences (DDD) - outcome y, unit id, period year, first treated
+      period g, eligibility elig.
+  - name: Simulated continuous treatment
+    path: sim_dose.omv
+    description: >-
+      800 units, 4 periods, dose between 0.1 and 1 for treated units; the effect
+      of dose d is 2d plus d squared. Continuous Treatment DiD - outcome y, unit
+      id, period year, first treated period g, dose dose.
+  - name: Simulated treatment that switches on and off
+    path: sim_dcdh.omv
+    description: >-
+      300 groups, 2001-2010; the treatment switches on in 218 groups (2004-2007)
+      and off again in about a third of them. Treatment Switching On and Off -
+      outcome y, group id, period year, treatment D. The effect of the treatment
+      is 2.
+  - name: Simulated staggered counts
+    path: sim_etwfe.omv
+    description: >-
+      600 units, 8 periods, a count outcome y, staggered adoption (cohorts 4, 5,
+      6 and never treated) and a covariate x1 that raises the outcome and the
+      effect. Extended TWFE (Wooldridge) - outcome y, unit id, period year,
+      first treated period g, covariate x1, model Poisson.
+usesNative: true
+minApp: 1.0.8
+
+...

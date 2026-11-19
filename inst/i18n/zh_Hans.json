@@ -1,0 +1,610 @@
+{
+    "code": "zh_Hans",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "zh_Hans",
+                "plural_forms": "nplurals=2; plural=(n!=1);"
+            },
+            "2000 units observed before (2010) and after (2015) with trends that depend on covariate x; true effect 1.5. Classic DiD (2x2) - outcome y, treated group treated, period year, unit id id, covariates x and region.": [
+                ""
+            ],
+            "2x2 comparisons": [
+                "2×2比较数"
+            ],
+            "50 US states 2000-2010; staggered adoption of castle doctrine laws, 29 states never treated. Compare DiD Estimators or DiD Diagnostics - outcome l_homicide, unit state, period year, treatment post (indicator) or effyear (first treated period, 0 = never); covariates population, income, unemployrt, poverty, police; weights pop2000 (population in 2000). Source - bacondecomp package, from Cheng and Hoekstra (2013).": [
+                ""
+            ],
+            "500 US counties 2003-2007, staggered minimum-wage increases. Compare DiD Estimators - outcome lemp, unit countyreal, period year, treatment first.treat with type First treated period (0 = never); covariate lpop. Source - did package.": [
+                ""
+            ],
+            "600 units, 12 periods, three treatment cohorts with growing effects, so TWFE is biased (true average effect on the treated about 1.7). Compare DiD Estimators or DiD Diagnostics - outcome y, unit id, period year, treatment D (indicator) or g (first treated period).": [
+                ""
+            ],
+            "800 units in treated and untreated groups with a group-wide shock that also hits ineligible units; true effect on eligible units about 1.49. Triple Differences (DDD) - outcome y, unit id, period year, first treated period g, eligibility elig.": [
+                ""
+            ],
+            "800 units, 4 periods, dose between 0.1 and 1 for treated units; the effect of dose d is 2d plus d squared. Continuous Treatment DiD - outcome y, unit id, period year, first treated period g, dose dose.": [
+                ""
+            ],
+            "About this estimator": [
+                "关于该估计量"
+            ],
+            "ACRT(d)": [
+                "ACRT(d)"
+            ],
+            "Additional output": [
+                "附加输出"
+            ],
+            "After": [
+                "之后"
+            ],
+            "Allowed violation of parallel trends": [
+                "允许的平行趋势偏离"
+            ],
+            "ATT": [
+                "ATT"
+            ],
+            "ATT(d)": [
+                "ATT(d)"
+            ],
+            "Average effects over all treated units": [
+                "全部受处理个体的平均效应"
+            ],
+            "Average estimate": [
+                "平均估计值"
+            ],
+            "Average of post-treatment periods": [
+                "处理后各期平均"
+            ],
+            "Bacon decomposition": [
+                "Bacon分解"
+            ],
+            "Bacon, Pre-trend and HonestDiD": [
+                "DiD诊断与敏感性分析"
+            ],
+            "Before": [
+                "之前"
+            ],
+            "Bootstrap draws": [
+                "Bootstrap抽样次数"
+            ],
+            "Borusyak-Jaravel-Spiess": [
+                "Borusyak-Jaravel-Spiess"
+            ],
+            "Borusyak, Jaravel & Spiess (imputation)": [
+                "Borusyak, Jaravel & Spiess(插补法)"
+            ],
+            "Borusyak, Jaravel & Spiess (Imputation)": [
+                "Borusyak, Jaravel & Spiess(插补法)"
+            ],
+            "Borusyak, Jaravel and Spiess imputation estimator: unit and period effects are fitted on untreated observations and used to impute treated counterfactuals, with a pre-trend test on untreated observations.": [
+                ""
+            ],
+            "Callaway & Sant'Anna": [
+                "Callaway & Sant'Anna"
+            ],
+            "Callaway & Sant'Anna bootstrap standard errors": [
+                "Callaway & Sant'Anna 的Bootstrap标准误"
+            ],
+            "Callaway & Sant'Anna control group": [
+                "Callaway & Sant'Anna 的对照组"
+            ],
+            "Callaway & Sant'Anna effects by calendar time": [
+                "Callaway & Sant'Anna 的分日历时间效应"
+            ],
+            "Callaway & Sant'Anna effects by cohort": [
+                "Callaway & Sant'Anna 的分队列效应"
+            ],
+            "Callaway & Sant'Anna estimation method (with covariates)": [
+                "Callaway & Sant'Anna 的估计方法(含协变量)"
+            ],
+            "Callaway & Sant'Anna group-time effects": [
+                "Callaway & Sant'Anna 的组-时效应"
+            ],
+            "Callaway & Sant'Anna group-time effects (heat map)": [
+                "Callaway & Sant'Anna 的组-时效应(热图)"
+            ],
+            "Callaway & Sant'Anna settings": [
+                "Callaway & Sant'Anna 设置"
+            ],
+            "Callaway and Sant'Anna group-time effects with never-treated or not-yet-treated controls, doubly robust, IPW or outcome-regression estimation, multiplier bootstrap, and aggregation to overall, event-time, cohort and calendar effects.": [
+                ""
+            ],
+            "Callaway-Sant'Anna": [
+                "Callaway-Sant'Anna"
+            ],
+            "Castle Doctrine laws and homicide (Cheng & Hoekstra)": [
+                "城堡法与凶杀案(Cheng & Hoekstra)"
+            ],
+            "Change": [
+                "变化"
+            ],
+            "Check": [
+                "检查"
+            ],
+            "Checks a panel before estimation (balance, duplicates, gaps, missing values, absorbing treatment, cohorts) and plots treatment status by unit and period.": [
+                ""
+            ],
+            "Classic DiD (2x2)": [
+                "经典DiD(2×2)"
+            ],
+            "Classic two-group, two-period difference-in-differences: group means, regression DiD and doubly robust, IPW and outcome-regression estimators.": [
+                ""
+            ],
+            "Cluster variable (optional)": [
+                "聚类变量(可选)"
+            ],
+            "Clusters": [
+                "聚类数"
+            ],
+            "Cohort (first treated period)": [
+                "队列(首次处理时期)"
+            ],
+            "Colors (colour-blind safe)": [
+                "彩色(色盲友好)"
+            ],
+            "Compare": [
+                "比较"
+            ],
+            "Compare DiD Estimators": [
+                "DiD估计量比较"
+            ],
+            "Compare difference-in-differences estimators side by side: TWFE, Callaway-Sant'Anna, Sun-Abraham, Borusyak-Jaravel-Spiess, Gardner and stacked DiD, with panel diagnostics, classic 2x2 DiD, Goodman-Bacon decomposition, TWFE weights, pre-trend tests, HonestDiD, triple differences, continuous treatment and reproducible R code.": [
+                ""
+            ],
+            "Compares difference-in-differences estimators on one panel: two-way fixed effects, Callaway and Sant'Anna, Sun and Abraham, Borusyak-Jaravel-Spiess, Gardner and stacked DiD, with overall and event-study effects.": [
+                ""
+            ],
+            "Comparison": [
+                "比较"
+            ],
+            "Comparison group": [
+                "比较组"
+            ],
+            "Confidence interval": [
+                "置信区间"
+            ],
+            "Confidence level (%)": [
+                "置信水平(%)"
+            ],
+            "Continuous Treatment DiD": [
+                "连续处理DiD"
+            ],
+            "Control group": [
+                "对照组"
+            ],
+            "Covariates": [
+                "协变量"
+            ],
+            "Covariates (optional)": [
+                "协变量(可选)"
+            ],
+            "Data summary": [
+                "数据概况"
+            ],
+            "df": [
+                "自由度"
+            ],
+            "Diagnostics": [
+                "诊断"
+            ],
+            "Diagnostics and extensions": [
+                "诊断与扩展"
+            ],
+            "Diagnostics for staggered-adoption designs: Goodman-Bacon decomposition, TWFE weights, joint pre-trend tests and HonestDiD sensitivity analysis.": [
+                ""
+            ],
+            "DiD": [
+                "DiD"
+            ],
+            "Difference-in-Differences Family": [
+                "双重差分家族"
+            ],
+            "DiD estimates (effect on the treated)": [
+                "DiD估计值(对受处理组的效应)"
+            ],
+            "DiD, eligible only": [
+                "DiD(仅符合条件者)"
+            ],
+            "DiD, ineligible only": [
+                "DiD(仅不符合条件者)"
+            ],
+            "Difference-in-differences with a continuous treatment: dose-response ATT(d) and the marginal effect ACRT(d) with their averages.": [
+                ""
+            ],
+            "Dose": [
+                "处理剂量"
+            ],
+            "Dose (constant within unit, 0 if untreated)": [
+                "处理剂量(个体内不变,未处理为0)"
+            ],
+            "Dose-response at selected doses": [
+                "选定剂量处的剂量-反应"
+            ],
+            "Dose-response curves": [
+                "剂量-反应曲线"
+            ],
+            "Doubly robust": [
+                "双重稳健"
+            ],
+            "Doubly robust (improved)": [
+                "双重稳健(改进版)"
+            ],
+            "Doubly robust (traditional)": [
+                "双重稳健(传统版)"
+            ],
+            "Dynamic effects by event time (reference period = -1)": [
+                "分事件时间的动态效应(基准期 = -1)"
+            ],
+            "Effect of interest": [
+                "关注的效应"
+            ],
+            "Effects by calendar time": [
+                "分日历时间的效应"
+            ],
+            "Effects by cohort": [
+                "分队列的效应"
+            ],
+            "Eligibility (0/1)": [
+                "符合条件(0/1)"
+            ],
+            "Error bars": [
+                "误差线"
+            ],
+            "Estimate": [
+                "估计值"
+            ],
+            "Estimation method": [
+                "估计方法"
+            ],
+            "Estimation method (with covariates)": [
+                "估计方法(含协变量)"
+            ],
+            "Estimator": [
+                "估计量"
+            ],
+            "Estimators": [
+                "估计量"
+            ],
+            "Event study": [
+                "事件研究"
+            ],
+            "Event study comparison": [
+                "事件研究比较"
+            ],
+            "Event study to analyse": [
+                "要分析的事件研究"
+            ],
+            "Event time": [
+                "事件时间"
+            ],
+            "Event window and confidence level": [
+                "事件窗口与置信水平"
+            ],
+            "Event window and settings": [
+                "事件窗口与设置"
+            ],
+            "Event window, from": [
+                "事件窗口:起点"
+            ],
+            "Event window, to": [
+                "事件窗口:终点"
+            ],
+            "First post-treatment period (e = 0)": [
+                "处理后第一期(e = 0)"
+            ],
+            "First treated period": [
+                "首次处理时期"
+            ],
+            "First treated period (0 or missing = never)": [
+                "首次处理时期(0或缺失 = 从未处理)"
+            ],
+            "Forest plot of overall ATT": [
+                "总体ATT森林图"
+            ],
+            "Gardner (did2s)": [
+                "Gardner (did2s)"
+            ],
+            "Gardner two-stage (did2s)": [
+                "Gardner 两阶段估计(did2s)"
+            ],
+            "Gardner Two-Stage (did2s)": [
+                "Gardner 两阶段估计(did2s)"
+            ],
+            "Gardner two-stage difference-in-differences: untreated outcomes are residualised on unit and period effects, then regressed on treatment, with corrected clustered standard errors.": [
+                ""
+            ],
+            "Goodman-Bacon decomposition": [
+                "Goodman-Bacon分解"
+            ],
+            "Goodman-Bacon decomposition of the TWFE estimate": [
+                "TWFE估计值的Goodman-Bacon分解"
+            ],
+            "Grayscale (for printing)": [
+                "灰度(便于黑白印刷)"
+            ],
+            "Group": [
+                "组"
+            ],
+            "Group means before and after": [
+                "处理前后各组均值"
+            ],
+            "Group-time effects": [
+                "分组-时点效应"
+            ],
+            "Group-time effects (heat map)": [
+                "分组-时点效应(热力图)"
+            ],
+            "HonestDiD robust confidence intervals": [
+                "HonestDiD稳健置信区间"
+            ],
+            "HonestDiD sensitivity analysis (slow)": [
+                "HonestDiD敏感性分析(较慢)"
+            ],
+            "How to read these diagnostics": [
+                "诊断结果的解读"
+            ],
+            "How to read these results": [
+                "结果的解读"
+            ],
+            "Inverse probability weighting": [
+                "逆概率加权"
+            ],
+            "Joint pre-trend tests": [
+                "事前趋势联合检验"
+            ],
+            "Joint test of pre-treatment effects (null: all equal zero)": [
+                "处理前效应联合检验(原假设:全部为0)"
+            ],
+            "Largest relative magnitude (Mbar)": [
+                "相对幅度上限(Mbar)"
+            ],
+            "Level effect": [
+                "水平效应"
+            ],
+            "Lower": [
+                "下限"
+            ],
+            "Marginal effect": [
+                "边际效应"
+            ],
+            "Mean outcome by group and period": [
+                "分组与时期的结果变量均值"
+            ],
+            "Minimum wage and teen employment (mpdta, Callaway & Sant'Anna)": [
+                "最低工资与青少年就业(mpdta,Callaway & Sant'Anna)"
+            ],
+            "Multiplier bootstrap standard errors": [
+                "乘数自助法标准误"
+            ],
+            "Negative weight": [
+                "负权重"
+            ],
+            "Negative-weight obs.": [
+                "负权重观测数"
+            ],
+            "Never treated": [
+                "从未处理"
+            ],
+            "Never-treated groups": [
+                "从未处理的组"
+            ],
+            "Not yet treated": [
+                "尚未处理"
+            ],
+            "Not-yet-treated groups": [
+                "尚未处理的组"
+            ],
+            "Note": [
+                "备注"
+            ],
+            "Number of interior knots": [
+                "内部节点数"
+            ],
+            "Observations": [
+                "观测数"
+            ],
+            "Outcome": [
+                "结果变量"
+            ],
+            "Outcome (optional)": [
+                "结果变量(可选)"
+            ],
+            "Outcome regression": [
+                "结果回归"
+            ],
+            "Overall ATT": [
+                "总体ATT"
+            ],
+            "Overall ATT by estimator": [
+                "各估计量的总体ATT"
+            ],
+            "Panel checks": [
+                "面板检查"
+            ],
+            "Panel Structure Check": [
+                "DiD面板诊断"
+            ],
+            "Panel summary": [
+                "面板概况"
+            ],
+            "Parameter": [
+                "参数"
+            ],
+            "Period": [
+                "时期"
+            ],
+            "Period (two values)": [
+                "时期(两个取值)"
+            ],
+            "Plot colors": [
+                "图的颜色"
+            ],
+            "Plot style": [
+                "图的样式"
+            ],
+            "Post-treatment periods": [
+                "处理后时期数"
+            ],
+            "Pre-treatment periods": [
+                "处理前时期数"
+            ],
+            "Random seed": [
+                "随机种子"
+            ],
+            "Regression DiD (OLS)": [
+                "回归DiD(OLS)"
+            ],
+            "Reproducible R code": [
+                "可复现的R代码"
+            ],
+            "Result": [
+                "结果"
+            ],
+            "Sampling weights (optional)": [
+                "抽样权重(可选)"
+            ],
+            "SE": [
+                "标准误"
+            ],
+            "Sensitivity analysis": [
+                "敏感性分析"
+            ],
+            "Sensitivity of the effect to violations of parallel trends": [
+                "效应对平行趋势偏离的敏感性"
+            ],
+            "Settings": [
+                "设置"
+            ],
+            "Shaded bands": [
+                "阴影带"
+            ],
+            "Share of units": [
+                "个体占比"
+            ],
+            "Show confidence intervals as": [
+                "置信区间的显示方式"
+            ],
+            "Show reproducible R code": [
+                "显示可复现的R代码"
+            ],
+            "Simulated continuous treatment": [
+                "模拟数据:连续处理"
+            ],
+            "Simulated staggered adoption": [
+                "模拟数据:交错处理"
+            ],
+            "Simulated triple differences": [
+                "模拟数据:三重差分"
+            ],
+            "Simulated two-period DiD": [
+                "模拟数据:两期DiD"
+            ],
+            "Spacing between estimators (error bars)": [
+                "估计量之间的间距(误差线)"
+            ],
+            "Spline degree": [
+                "样条次数"
+            ],
+            "Stacked DiD": [
+                "堆叠DiD"
+            ],
+            "Stacked difference-in-differences: one sub-experiment per treatment cohort with clean controls, stacked with unit-by-experiment and period-by-experiment fixed effects.": [
+                ""
+            ],
+            "Status": [
+                "状态"
+            ],
+            "Sun & Abraham": [
+                "Sun & Abraham"
+            ],
+            "Sun and Abraham interaction-weighted estimator with cohort-by-event-time effects and never-treated controls, with overall and event-study effects.": [
+                ""
+            ],
+            "Sun-Abraham": [
+                "Sun-Abraham"
+            ],
+            "Time period": [
+                "时期"
+            ],
+            "Total weight": [
+                "权重合计"
+            ],
+            "Treated group (0/1)": [
+                "处理组(0/1)"
+            ],
+            "Treated obs.": [
+                "受处理观测数"
+            ],
+            "Treatment cohort": [
+                "处理队列"
+            ],
+            "Treatment cohorts": [
+                "处理队列"
+            ],
+            "Treatment indicator D (0/1)": [
+                "处理指示变量 D(0/1)"
+            ],
+            "Treatment status by unit and period": [
+                "分个体与时期的处理状态"
+            ],
+            "Treatment variable": [
+                "处理变量"
+            ],
+            "Treatment variable is": [
+                "处理变量类型"
+            ],
+            "Triple difference (DDD)": [
+                "三重差分(DDD)"
+            ],
+            "Triple Differences (DDD)": [
+                "三重差分(DDD)"
+            ],
+            "Triple differences with an eligibility variable, shown next to difference-in-differences on eligible-only and ineligible-only units.": [
+                ""
+            ],
+            "TWFE": [
+                "TWFE"
+            ],
+            "TWFE weights on treated observations": [
+                "受处理观测的TWFE权重"
+            ],
+            "Two-way fixed effects (TWFE)": [
+                "双向固定效应(TWFE)"
+            ],
+            "Two-Way Fixed Effects (TWFE)": [
+                "双向固定效应(TWFE)"
+            ],
+            "Two-way fixed effects regression of the outcome on the treatment indicator with unit and period fixed effects, static and event study, with a warning that TWFE can be biased under staggered adoption.": [
+                ""
+            ],
+            "Unit ID": [
+                "个体ID"
+            ],
+            "Unit ID (optional, panel data)": [
+                "个体ID(可选,面板数据)"
+            ],
+            "Units": [
+                "个体数"
+            ],
+            "Upper": [
+                "上限"
+            ],
+            "Wald chi-square": [
+                "Wald卡方"
+            ],
+            "Weight": [
+                "权重"
+            ],
+            "What each estimator estimates": [
+                "各估计量所估计的对象"
+            ],
+            "What to look for": [
+                "需要关注的要点"
+            ]
+        }
+    }
+}

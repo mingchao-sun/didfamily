@@ -1,0 +1,288 @@
+---
+name:  didcompare
+title: Compare DiD Estimators
+menuGroup: DiD
+menuSubgroup: Compare
+menuTitle: Compare DiD Estimators
+version: '1.0.0'
+jas: '1.2'
+
+description:
+    main: 'Compares difference-in-differences estimators on one panel: two-way fixed effects, Callaway and Sant''Anna, Sun and Abraham, Borusyak-Jaravel-Spiess, Gardner and stacked DiD, with overall and event-study effects.'
+    R:
+        dontrun: true
+        usage: |
+            # d is a data frame with one row per unit and period
+            didcompare(data = d, dep = 'y', id = 'id', time = 'year', treat = 'D')
+
+options:
+    - name: data
+      type: Data
+
+    - name: dep
+      title: Outcome
+      type: Variable
+      permitted: [numeric]
+      description:
+          R: 'a string naming the outcome variable in `data`'
+
+    - name: id
+      title: Unit ID
+      type: Variable
+      permitted: [numeric, factor, id]
+      description:
+          R: 'a string naming the unit identifier variable in `data`'
+
+    - name: time
+      title: Time period
+      type: Variable
+      permitted: [numeric]
+      description:
+          R: 'a string naming the period variable in `data`; values must be integers (a year or a period number)'
+
+    - name: treat
+      title: Treatment variable
+      type: Variable
+      permitted: [numeric, factor, id]
+      description:
+          R: 'a string naming the treatment variable in `data`: a 0/1 indicator that never turns off, or the first treated period (see `treatType`)'
+
+    - name: covs
+      title: Covariates
+      type: Variables
+      permitted: [numeric, factor]
+      default: null
+      description:
+          R: 'a vector of strings naming covariates in `data` (optional); text and factor variables are dummy-coded'
+
+    - name: cluster
+      title: Cluster variable (optional)
+      type: Variable
+      permitted: [numeric, factor, id]
+      default: null
+      description:
+          R: 'a string naming a cluster variable that is constant within units (optional); by default standard errors are clustered by unit'
+
+    - name: weights
+      title: Sampling weights (optional)
+      type: Variable
+      permitted: [numeric]
+      default: null
+      description:
+          R: 'a string naming a positive weight variable that is constant within units (optional), for example a baseline population; not used by the Borusyak-Jaravel-Spiess estimator'
+
+    - name: treatType
+      title: Treatment variable is
+      type: List
+      options:
+        - title: Treatment indicator D (0/1)
+          name: indicator
+        - title: First treated period (0 or missing = never)
+          name: cohort
+      default: indicator
+      description:
+          R: '`''indicator''` (default) if `treat` is a 0/1 treatment indicator, or `''cohort''` if it holds the first treated period (0 or missing = never treated)'
+
+    - name: twfe
+      title: Two-way fixed effects (TWFE)
+      type: Bool
+      default: true
+      description:
+          R: '`TRUE` (default) or `FALSE`, estimate two-way fixed effects (static and event study)'
+
+    - name: cs
+      title: Callaway & Sant'Anna
+      type: Bool
+      default: true
+      description:
+          R: '`TRUE` (default) or `FALSE`, estimate Callaway and Sant''Anna group-time effects'
+
+    - name: sa
+      title: Sun & Abraham
+      type: Bool
+      default: true
+      description:
+          R: '`TRUE` (default) or `FALSE`, estimate Sun and Abraham interaction-weighted effects (never-treated controls)'
+
+    - name: bjs
+      title: Borusyak, Jaravel & Spiess (imputation)
+      type: Bool
+      default: true
+      description:
+          R: '`TRUE` (default) or `FALSE`, estimate the Borusyak, Jaravel and Spiess imputation estimator'
+
+    - name: gardner
+      title: Gardner two-stage (did2s)
+      type: Bool
+      default: true
+      description:
+          R: '`TRUE` (default) or `FALSE`, estimate Gardner''s two-stage estimator'
+
+    - name: stacked
+      title: Stacked DiD
+      type: Bool
+      default: true
+      description:
+          R: '`TRUE` (default) or `FALSE`, estimate stacked difference-in-differences with clean controls'
+
+    - name: csControl
+      title: Callaway & Sant'Anna control group
+      type: List
+      options:
+        - title: Never treated
+          name: nevertreated
+        - title: Not yet treated
+          name: notyettreated
+      default: nevertreated
+      description:
+          R: '`''nevertreated''` (default) or `''notyettreated''`, the control group used by Callaway and Sant''Anna'
+
+    - name: csMethod
+      title: Callaway & Sant'Anna estimation method (with covariates)
+      type: List
+      options:
+        - title: Doubly robust
+          name: dr
+        - title: Inverse probability weighting
+          name: ipw
+        - title: Outcome regression
+          name: reg
+      default: dr
+      description:
+          R: '`''dr''` (default), `''ipw''` or `''reg''`, the estimation method used with covariates'
+
+    - name: bootstrap
+      title: Callaway & Sant'Anna bootstrap standard errors
+      type: Bool
+      default: false
+      description:
+          R: '`TRUE` or `FALSE` (default), use the multiplier bootstrap for Callaway and Sant''Anna standard errors'
+
+    - name: bootReps
+      title: Bootstrap draws
+      type: Integer
+      min: 99
+      max: 9999
+      default: 999
+      description:
+          R: 'the number of bootstrap draws (default 999)'
+
+    - name: seed
+      title: Random seed
+      type: Integer
+      min: 1
+      max: 2147483647
+      default: 1234
+      description:
+          R: 'the random seed used for the bootstrap (default 1234)'
+
+    - name: showForest
+      title: Forest plot of overall ATT
+      type: Bool
+      default: true
+      description:
+          R: '`TRUE` (default) or `FALSE`, show the forest plot of overall effects'
+
+    - name: showGT
+      title: Callaway & Sant'Anna group-time effects (heat map)
+      type: Bool
+      default: false
+      description:
+          R: '`TRUE` or `FALSE` (default), show the Callaway and Sant''Anna group-time effects as a heat map'
+
+    - name: aggGroup
+      title: Callaway & Sant'Anna effects by cohort
+      type: Bool
+      default: false
+      description:
+          R: '`TRUE` or `FALSE` (default), tabulate Callaway and Sant''Anna effects by cohort'
+
+    - name: aggCalendar
+      title: Callaway & Sant'Anna effects by calendar time
+      type: Bool
+      default: false
+      description:
+          R: '`TRUE` or `FALSE` (default), tabulate Callaway and Sant''Anna effects by calendar time'
+
+    - name: showCode
+      title: Show reproducible R code
+      type: Bool
+      default: false
+      description:
+          R: '`TRUE` or `FALSE` (default), show an R script that reproduces the results'
+
+    - name: minE
+      title: Event window, from
+      type: Integer
+      min: -50
+      max: -1
+      default: -4
+      description:
+          R: 'the most negative event time shown (default -4)'
+
+    - name: maxE
+      title: Event window, to
+      type: Integer
+      min: 0
+      max: 50
+      default: 4
+      description:
+          R: 'the largest event time shown (default 4)'
+
+    - name: ciLevel
+      title: Confidence level (%)
+      type: Number
+      min: 50
+      max: 99.9
+      default: 95
+      description:
+          R: 'the confidence level in percent (default 95)'
+
+    - name: plotPalette
+      title: Plot colors
+      type: List
+      options:
+        - title: Colors (colour-blind safe)
+          name: color
+        - title: Grayscale (for printing)
+          name: gray
+      default: color
+      description:
+          R: '`''color''` (default, colour-blind safe) or `''gray''` (shades, shapes and line types for printing)'
+
+    - name: plotCI
+      title: Show confidence intervals as
+      type: List
+      options:
+        - title: Error bars
+          name: bars
+        - title: Shaded bands
+          name: ribbon
+      default: bars
+      description:
+          R: '`''bars''` (default) or `''ribbon''`, draw confidence intervals as error bars or shaded bands'
+
+    - name: plotDodge
+      title: Spacing between estimators (error bars)
+      type: Number
+      min: 0
+      max: 1
+      default: 0.5
+      description:
+          R: 'the horizontal spacing between estimators when intervals are drawn as error bars (default 0.5)'
+
+    - name: showHelp
+      title: Method notes
+      type: Bool
+      default: false
+      description:
+          R: '`TRUE` or `FALSE` (default), show notes on what the method does and how to read the results'
+
+    - name: showGuide
+      title: Data and setup guide
+      type: Bool
+      default: false
+      description:
+          R: '`TRUE` or `FALSE` (default), show a guide to the variables and the data format'
+
+...

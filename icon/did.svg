@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- didcompare ribbon icon, 45 x 30 like the built-in jamovi module icons.
+     Control group (grey), treated group (blue), treatment time (dashed), effect = gap (orange). -->
+<svg width="45" height="30" viewBox="0 0 45 30" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- axes -->
+    <path d="M4.5 3.5V26.5H41.5" stroke="#4a4a4a" stroke-width="1.2"/>
+    <!-- treatment time -->
+    <path d="M23 4.5V25" stroke="#8a8a8a" stroke-width="1" stroke-dasharray="1.8 1.8"/>
+    <!-- counterfactual of the treated group (parallel trend) -->
+    <path d="M23 15.5L39.5 9.5" stroke="#3E6DCC" stroke-width="1.1" stroke-dasharray="1.6 1.6" opacity=".7"/>
+    <!-- control group -->
+    <path d="M7.5 21.5L23 18.5L39.5 12.5" stroke="#8c8c8c" stroke-width="1.7"/>
+    <!-- treated group: parallel before, jumps after -->
+    <path d="M7.5 17.5L23 14.5L39.5 3.8" stroke="#3E6DCC" stroke-width="1.9"/>
+    <!-- effect bracket -->
+    <path d="M42 4.2V9.2" stroke="#F2A33A" stroke-width="1.7"/>
+  </g>
+  <g>
+    <circle cx="7.5" cy="21.5" r="1.7" fill="#8c8c8c"/>
+    <circle cx="23" cy="18.5" r="1.7" fill="#8c8c8c"/>
+    <circle cx="39.5" cy="12.5" r="1.7" fill="#8c8c8c"/>
+    <circle cx="7.5" cy="17.5" r="1.9" fill="#3E6DCC"/>
+    <circle cx="23" cy="14.5" r="1.9" fill="#3E6DCC"/>
+    <circle cx="39.5" cy="3.8" r="1.9" fill="#3E6DCC"/>
+  </g>
+</svg>

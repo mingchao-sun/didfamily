@@ -1,0 +1,610 @@
+{
+    "code": "ja",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "ja",
+                "plural_forms": "nplurals=2; plural=(n!=1);"
+            },
+            "2000 units observed before (2010) and after (2015) with trends that depend on covariate x; true effect 1.5. Classic DiD (2x2) - outcome y, treated group treated, period year, unit id id, covariates x and region.": [
+                ""
+            ],
+            "2x2 comparisons": [
+                "2×2比較の数"
+            ],
+            "50 US states 2000-2010; staggered adoption of castle doctrine laws, 29 states never treated. Compare DiD Estimators or DiD Diagnostics - outcome l_homicide, unit state, period year, treatment post (indicator) or effyear (first treated period, 0 = never); covariates population, income, unemployrt, poverty, police; weights pop2000 (population in 2000). Source - bacondecomp package, from Cheng and Hoekstra (2013).": [
+                ""
+            ],
+            "500 US counties 2003-2007, staggered minimum-wage increases. Compare DiD Estimators - outcome lemp, unit countyreal, period year, treatment first.treat with type First treated period (0 = never); covariate lpop. Source - did package.": [
+                ""
+            ],
+            "600 units, 12 periods, three treatment cohorts with growing effects, so TWFE is biased (true average effect on the treated about 1.7). Compare DiD Estimators or DiD Diagnostics - outcome y, unit id, period year, treatment D (indicator) or g (first treated period).": [
+                ""
+            ],
+            "800 units in treated and untreated groups with a group-wide shock that also hits ineligible units; true effect on eligible units about 1.49. Triple Differences (DDD) - outcome y, unit id, period year, first treated period g, eligibility elig.": [
+                ""
+            ],
+            "800 units, 4 periods, dose between 0.1 and 1 for treated units; the effect of dose d is 2d plus d squared. Continuous Treatment DiD - outcome y, unit id, period year, first treated period g, dose dose.": [
+                ""
+            ],
+            "About this estimator": [
+                "この推定量について"
+            ],
+            "ACRT(d)": [
+                "ACRT(d)"
+            ],
+            "Additional output": [
+                "追加の出力"
+            ],
+            "After": [
+                "後"
+            ],
+            "Allowed violation of parallel trends": [
+                "許容する平行トレンドからの乖離"
+            ],
+            "ATT": [
+                "ATT"
+            ],
+            "ATT(d)": [
+                "ATT(d)"
+            ],
+            "Average effects over all treated units": [
+                "処置された全個体の平均効果"
+            ],
+            "Average estimate": [
+                "平均推定値"
+            ],
+            "Average of post-treatment periods": [
+                "処置後の全期間の平均"
+            ],
+            "Bacon decomposition": [
+                "ベーコン分解"
+            ],
+            "Bacon, Pre-trend and HonestDiD": [
+                "DiD診断と感度分析"
+            ],
+            "Before": [
+                "前"
+            ],
+            "Bootstrap draws": [
+                "ブートストラップ反復数"
+            ],
+            "Borusyak-Jaravel-Spiess": [
+                "Borusyak-Jaravel-Spiess"
+            ],
+            "Borusyak, Jaravel & Spiess (imputation)": [
+                "Borusyak, Jaravel & Spiess(補完法)"
+            ],
+            "Borusyak, Jaravel & Spiess (Imputation)": [
+                "Borusyak, Jaravel & Spiess(補完法)"
+            ],
+            "Borusyak, Jaravel and Spiess imputation estimator: unit and period effects are fitted on untreated observations and used to impute treated counterfactuals, with a pre-trend test on untreated observations.": [
+                ""
+            ],
+            "Callaway & Sant'Anna": [
+                "Callaway & Sant'Anna"
+            ],
+            "Callaway & Sant'Anna bootstrap standard errors": [
+                "Callaway & Sant'Anna のブートストラップ標準誤差"
+            ],
+            "Callaway & Sant'Anna control group": [
+                "Callaway & Sant'Anna のコントロール群"
+            ],
+            "Callaway & Sant'Anna effects by calendar time": [
+                "Callaway & Sant'Anna の暦時点別効果"
+            ],
+            "Callaway & Sant'Anna effects by cohort": [
+                "Callaway & Sant'Anna のコホート別効果"
+            ],
+            "Callaway & Sant'Anna estimation method (with covariates)": [
+                "Callaway & Sant'Anna の推定方法(共変量あり)"
+            ],
+            "Callaway & Sant'Anna group-time effects": [
+                "Callaway & Sant'Anna の群×時点別効果"
+            ],
+            "Callaway & Sant'Anna group-time effects (heat map)": [
+                "Callaway & Sant'Anna の群×時点別効果(ヒートマップ)"
+            ],
+            "Callaway & Sant'Anna settings": [
+                "Callaway & Sant'Anna の設定"
+            ],
+            "Callaway and Sant'Anna group-time effects with never-treated or not-yet-treated controls, doubly robust, IPW or outcome-regression estimation, multiplier bootstrap, and aggregation to overall, event-time, cohort and calendar effects.": [
+                ""
+            ],
+            "Callaway-Sant'Anna": [
+                "Callaway-Sant'Anna"
+            ],
+            "Castle Doctrine laws and homicide (Cheng & Hoekstra)": [
+                "キャッスル・ドクトリン法と殺人(Cheng & Hoekstra)"
+            ],
+            "Change": [
+                "変化"
+            ],
+            "Check": [
+                "チェック"
+            ],
+            "Checks a panel before estimation (balance, duplicates, gaps, missing values, absorbing treatment, cohorts) and plots treatment status by unit and period.": [
+                ""
+            ],
+            "Classic DiD (2x2)": [
+                "古典的DiD(2×2)"
+            ],
+            "Classic two-group, two-period difference-in-differences: group means, regression DiD and doubly robust, IPW and outcome-regression estimators.": [
+                ""
+            ],
+            "Cluster variable (optional)": [
+                "クラスター変数(任意)"
+            ],
+            "Clusters": [
+                "クラスター数"
+            ],
+            "Cohort (first treated period)": [
+                "コホート(初回処置期)"
+            ],
+            "Colors (colour-blind safe)": [
+                "カラー(色覚多様性に配慮)"
+            ],
+            "Compare": [
+                "比較"
+            ],
+            "Compare DiD Estimators": [
+                "DiD推定量の比較"
+            ],
+            "Compare difference-in-differences estimators side by side: TWFE, Callaway-Sant'Anna, Sun-Abraham, Borusyak-Jaravel-Spiess, Gardner and stacked DiD, with panel diagnostics, classic 2x2 DiD, Goodman-Bacon decomposition, TWFE weights, pre-trend tests, HonestDiD, triple differences, continuous treatment and reproducible R code.": [
+                ""
+            ],
+            "Compares difference-in-differences estimators on one panel: two-way fixed effects, Callaway and Sant'Anna, Sun and Abraham, Borusyak-Jaravel-Spiess, Gardner and stacked DiD, with overall and event-study effects.": [
+                ""
+            ],
+            "Comparison": [
+                "比較"
+            ],
+            "Comparison group": [
+                "比較群"
+            ],
+            "Confidence interval": [
+                "信頼区間"
+            ],
+            "Confidence level (%)": [
+                "信頼水準(%)"
+            ],
+            "Continuous Treatment DiD": [
+                "連続処置のDiD"
+            ],
+            "Control group": [
+                "コントロール群"
+            ],
+            "Covariates": [
+                "共変量"
+            ],
+            "Covariates (optional)": [
+                "共変量(任意)"
+            ],
+            "Data summary": [
+                "データの概要"
+            ],
+            "df": [
+                "自由度"
+            ],
+            "Diagnostics": [
+                "診断"
+            ],
+            "Diagnostics and extensions": [
+                "診断と拡張"
+            ],
+            "Diagnostics for staggered-adoption designs: Goodman-Bacon decomposition, TWFE weights, joint pre-trend tests and HonestDiD sensitivity analysis.": [
+                ""
+            ],
+            "DiD": [
+                "DiD"
+            ],
+            "Difference-in-Differences Family": [
+                "差の差法ファミリー"
+            ],
+            "DiD estimates (effect on the treated)": [
+                "DiD推定値(処置群への効果)"
+            ],
+            "DiD, eligible only": [
+                "DiD(適格者のみ)"
+            ],
+            "DiD, ineligible only": [
+                "DiD(非適格者のみ)"
+            ],
+            "Difference-in-differences with a continuous treatment: dose-response ATT(d) and the marginal effect ACRT(d) with their averages.": [
+                ""
+            ],
+            "Dose": [
+                "処置量"
+            ],
+            "Dose (constant within unit, 0 if untreated)": [
+                "処置量(個体内で一定、未処置は0)"
+            ],
+            "Dose-response at selected doses": [
+                "選択した処置量での用量反応"
+            ],
+            "Dose-response curves": [
+                "用量反応曲線"
+            ],
+            "Doubly robust": [
+                "二重頑健"
+            ],
+            "Doubly robust (improved)": [
+                "二重頑健(改良版)"
+            ],
+            "Doubly robust (traditional)": [
+                "二重頑健(従来版)"
+            ],
+            "Dynamic effects by event time (reference period = -1)": [
+                "イベント時点別の動学的効果(基準期 = -1)"
+            ],
+            "Effect of interest": [
+                "関心のある効果"
+            ],
+            "Effects by calendar time": [
+                "暦時点別の効果"
+            ],
+            "Effects by cohort": [
+                "コホート別の効果"
+            ],
+            "Eligibility (0/1)": [
+                "適格性(0/1)"
+            ],
+            "Error bars": [
+                "エラーバー"
+            ],
+            "Estimate": [
+                "推定値"
+            ],
+            "Estimation method": [
+                "推定方法"
+            ],
+            "Estimation method (with covariates)": [
+                "推定方法(共変量あり)"
+            ],
+            "Estimator": [
+                "推定量"
+            ],
+            "Estimators": [
+                "推定量"
+            ],
+            "Event study": [
+                "イベントスタディ"
+            ],
+            "Event study comparison": [
+                "イベントスタディの比較"
+            ],
+            "Event study to analyse": [
+                "分析するイベントスタディ"
+            ],
+            "Event time": [
+                "イベント時点"
+            ],
+            "Event window and confidence level": [
+                "イベント窓と信頼水準"
+            ],
+            "Event window and settings": [
+                "イベント窓と設定"
+            ],
+            "Event window, from": [
+                "イベント窓:開始"
+            ],
+            "Event window, to": [
+                "イベント窓:終了"
+            ],
+            "First post-treatment period (e = 0)": [
+                "処置後の最初の期間(e = 0)"
+            ],
+            "First treated period": [
+                "初回処置期"
+            ],
+            "First treated period (0 or missing = never)": [
+                "初回処置期(0または欠損 = 処置なし)"
+            ],
+            "Forest plot of overall ATT": [
+                "全体ATTのフォレストプロット"
+            ],
+            "Gardner (did2s)": [
+                "Gardner (did2s)"
+            ],
+            "Gardner two-stage (did2s)": [
+                "Gardner 二段階推定(did2s)"
+            ],
+            "Gardner Two-Stage (did2s)": [
+                "Gardner 二段階推定(did2s)"
+            ],
+            "Gardner two-stage difference-in-differences: untreated outcomes are residualised on unit and period effects, then regressed on treatment, with corrected clustered standard errors.": [
+                ""
+            ],
+            "Goodman-Bacon decomposition": [
+                "Goodman-Bacon分解"
+            ],
+            "Goodman-Bacon decomposition of the TWFE estimate": [
+                "TWFE推定値のGoodman-Bacon分解"
+            ],
+            "Grayscale (for printing)": [
+                "グレースケール(印刷用)"
+            ],
+            "Group": [
+                "群"
+            ],
+            "Group means before and after": [
+                "処置前後の群別平均"
+            ],
+            "Group-time effects": [
+                "グループ・時点別の効果"
+            ],
+            "Group-time effects (heat map)": [
+                "グループ・時点別の効果(ヒートマップ)"
+            ],
+            "HonestDiD robust confidence intervals": [
+                "HonestDiDによる頑健な信頼区間"
+            ],
+            "HonestDiD sensitivity analysis (slow)": [
+                "HonestDiD感度分析(時間がかかります)"
+            ],
+            "How to read these diagnostics": [
+                "診断結果の読み方"
+            ],
+            "How to read these results": [
+                "結果の読み方"
+            ],
+            "Inverse probability weighting": [
+                "逆確率重み付け"
+            ],
+            "Joint pre-trend tests": [
+                "事前トレンドの同時検定"
+            ],
+            "Joint test of pre-treatment effects (null: all equal zero)": [
+                "処置前効果の同時検定(帰無仮説:すべて0)"
+            ],
+            "Largest relative magnitude (Mbar)": [
+                "相対的大きさの上限(Mbar)"
+            ],
+            "Level effect": [
+                "水準の効果"
+            ],
+            "Lower": [
+                "下限"
+            ],
+            "Marginal effect": [
+                "限界効果"
+            ],
+            "Mean outcome by group and period": [
+                "群・時点別の結果変数の平均"
+            ],
+            "Minimum wage and teen employment (mpdta, Callaway & Sant'Anna)": [
+                "最低賃金と10代の雇用(mpdta、Callaway & Sant'Anna)"
+            ],
+            "Multiplier bootstrap standard errors": [
+                "乗数ブートストラップ標準誤差"
+            ],
+            "Negative weight": [
+                "負のウェイト"
+            ],
+            "Negative-weight obs.": [
+                "負のウェイトの観測数"
+            ],
+            "Never treated": [
+                "一度も処置されない"
+            ],
+            "Never-treated groups": [
+                "一度も処置されない群"
+            ],
+            "Not yet treated": [
+                "未処置(処置前)"
+            ],
+            "Not-yet-treated groups": [
+                "未処置(処置前)の群"
+            ],
+            "Note": [
+                "備考"
+            ],
+            "Number of interior knots": [
+                "内部ノットの数"
+            ],
+            "Observations": [
+                "観測数"
+            ],
+            "Outcome": [
+                "結果変数"
+            ],
+            "Outcome (optional)": [
+                "結果変数(任意)"
+            ],
+            "Outcome regression": [
+                "結果回帰"
+            ],
+            "Overall ATT": [
+                "全体のATT"
+            ],
+            "Overall ATT by estimator": [
+                "推定量別の全体ATT"
+            ],
+            "Panel checks": [
+                "パネルのチェック"
+            ],
+            "Panel Structure Check": [
+                "DiDパネル診断"
+            ],
+            "Panel summary": [
+                "パネルの概要"
+            ],
+            "Parameter": [
+                "パラメータ"
+            ],
+            "Period": [
+                "時点"
+            ],
+            "Period (two values)": [
+                "時点(2つの値)"
+            ],
+            "Plot colors": [
+                "図の色"
+            ],
+            "Plot style": [
+                "図のスタイル"
+            ],
+            "Post-treatment periods": [
+                "処置後の期間数"
+            ],
+            "Pre-treatment periods": [
+                "処置前の期間数"
+            ],
+            "Random seed": [
+                "乱数シード"
+            ],
+            "Regression DiD (OLS)": [
+                "回帰DiD(OLS)"
+            ],
+            "Reproducible R code": [
+                "再現可能なRコード"
+            ],
+            "Result": [
+                "結果"
+            ],
+            "Sampling weights (optional)": [
+                "標本ウェイト(任意)"
+            ],
+            "SE": [
+                "標準誤差"
+            ],
+            "Sensitivity analysis": [
+                "感度分析"
+            ],
+            "Sensitivity of the effect to violations of parallel trends": [
+                "平行トレンドの違反に対する効果の感度"
+            ],
+            "Settings": [
+                "設定"
+            ],
+            "Shaded bands": [
+                "帯(網掛け)"
+            ],
+            "Share of units": [
+                "個体の割合"
+            ],
+            "Show confidence intervals as": [
+                "信頼区間の表示方法"
+            ],
+            "Show reproducible R code": [
+                "再現可能なRコードを表示"
+            ],
+            "Simulated continuous treatment": [
+                "シミュレーション:連続処置"
+            ],
+            "Simulated staggered adoption": [
+                "シミュレーション:段階的導入"
+            ],
+            "Simulated triple differences": [
+                "シミュレーション:三重差分"
+            ],
+            "Simulated two-period DiD": [
+                "シミュレーション:2期間のDiD"
+            ],
+            "Spacing between estimators (error bars)": [
+                "推定量どうしの間隔(エラーバー)"
+            ],
+            "Spline degree": [
+                "スプラインの次数"
+            ],
+            "Stacked DiD": [
+                "スタック型DiD"
+            ],
+            "Stacked difference-in-differences: one sub-experiment per treatment cohort with clean controls, stacked with unit-by-experiment and period-by-experiment fixed effects.": [
+                ""
+            ],
+            "Status": [
+                "状態"
+            ],
+            "Sun & Abraham": [
+                "Sun & Abraham"
+            ],
+            "Sun and Abraham interaction-weighted estimator with cohort-by-event-time effects and never-treated controls, with overall and event-study effects.": [
+                ""
+            ],
+            "Sun-Abraham": [
+                "Sun-Abraham"
+            ],
+            "Time period": [
+                "時点"
+            ],
+            "Total weight": [
+                "ウェイト合計"
+            ],
+            "Treated group (0/1)": [
+                "処置群(0/1)"
+            ],
+            "Treated obs.": [
+                "処置された観測数"
+            ],
+            "Treatment cohort": [
+                "処置コホート"
+            ],
+            "Treatment cohorts": [
+                "処置コホート"
+            ],
+            "Treatment indicator D (0/1)": [
+                "処置指標 D(0/1)"
+            ],
+            "Treatment status by unit and period": [
+                "個体・時点別の処置状態"
+            ],
+            "Treatment variable": [
+                "処置変数"
+            ],
+            "Treatment variable is": [
+                "処置変数の種類"
+            ],
+            "Triple difference (DDD)": [
+                "三重差分(DDD)"
+            ],
+            "Triple Differences (DDD)": [
+                "三重差分(DDD)"
+            ],
+            "Triple differences with an eligibility variable, shown next to difference-in-differences on eligible-only and ineligible-only units.": [
+                ""
+            ],
+            "TWFE": [
+                "TWFE"
+            ],
+            "TWFE weights on treated observations": [
+                "処置された観測に対するTWFEウェイト"
+            ],
+            "Two-way fixed effects (TWFE)": [
+                "two-way固定効果(TWFE)"
+            ],
+            "Two-Way Fixed Effects (TWFE)": [
+                "two-way固定効果(TWFE)"
+            ],
+            "Two-way fixed effects regression of the outcome on the treatment indicator with unit and period fixed effects, static and event study, with a warning that TWFE can be biased under staggered adoption.": [
+                ""
+            ],
+            "Unit ID": [
+                "個体ID"
+            ],
+            "Unit ID (optional, panel data)": [
+                "個体ID(任意、パネルデータ)"
+            ],
+            "Units": [
+                "個体数"
+            ],
+            "Upper": [
+                "上限"
+            ],
+            "Wald chi-square": [
+                "Wald カイ二乗"
+            ],
+            "Weight": [
+                "ウェイト"
+            ],
+            "What each estimator estimates": [
+                "各推定量が推定するもの"
+            ],
+            "What to look for": [
+                "確認するポイント"
+            ]
+        }
+    }
+}

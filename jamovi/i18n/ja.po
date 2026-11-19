@@ -1,0 +1,1464 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2021-07-26 12:08:06+01000\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"Language: ja\n"
+
+#: package/datasets/Simulatedtwo-periodDiD.description
+msgid ""
+"2000 units observed before (2010) and after (2015) with trends that depend "
+"on covariate x; true effect 1.5. Classic DiD (2x2) - outcome y, treated "
+"group treated, period year, unit id id, covariates x and region."
+msgstr ""
+
+#: didiag/results/bacon.columns.title
+msgid "2x2 comparisons"
+msgstr "2×2比較の数"
+
+#: package/datasets/CastleDoctrinelawsandhomicide(Cheng&Hoekstra).description
+msgid ""
+"50 US states 2000-2010; staggered adoption of castle doctrine laws, 29 "
+"states never treated. Compare DiD Estimators or DiD Diagnostics - outcome "
+"l_homicide, unit state, period year, treatment post (indicator) or effyear "
+"(first treated period, 0 = never); covariates population, income, "
+"unemployrt, poverty, police; weights pop2000 (population in 2000). Source - "
+"bacondecomp package, from Cheng and Hoekstra (2013)."
+msgstr ""
+
+#: package/datasets/Minimumwageandteenemployment(mpdta,Callaway&Sant'Anna).description
+msgid ""
+"500 US counties 2003-2007, staggered minimum-wage increases. Compare DiD "
+"Estimators - outcome lemp, unit countyreal, period year, treatment "
+"first.treat with type First treated period (0 = never); covariate lpop. "
+"Source - did package."
+msgstr ""
+
+#: package/datasets/Simulatedstaggeredadoption.description
+msgid ""
+"600 units, 12 periods, three treatment cohorts with growing effects, so TWFE "
+"is biased (true average effect on the treated about 1.7). Compare DiD "
+"Estimators or DiD Diagnostics - outcome y, unit id, period year, treatment D "
+"(indicator) or g (first treated period)."
+msgstr ""
+
+#: package/datasets/Simulatedtripledifferences.description
+msgid ""
+"800 units in treated and untreated groups with a group-wide shock that also "
+"hits ineligible units; true effect on eligible units about 1.49. Triple "
+"Differences (DDD) - outcome y, unit id, period year, first treated period g, "
+"eligibility elig."
+msgstr ""
+
+#: package/datasets/Simulatedcontinuoustreatment.description
+msgid ""
+"800 units, 4 periods, dose between 0.1 and 1 for treated units; the effect "
+"of dose d is 2d plus d squared. Continuous Treatment DiD - outcome y, unit "
+"id, period year, first treated period g, dose dose."
+msgstr ""
+
+#: didbjs/results/notes.title
+#: didcs/results/notes.title
+#: didgardner/results/notes.title
+#: didsa/results/notes.title
+#: didstacked/results/notes.title
+#: didtwfe/results/notes.title
+msgid "About this estimator"
+msgstr "この推定量について"
+
+#: dosedid/results/curve.columns.title
+msgid "ACRT(d)"
+msgstr "ACRT(d)"
+
+#: didbjs/ui[3].label
+#: didcompare/ui[5].label
+#: didcs/ui[4].label
+#: didgardner/ui[3].label
+#: didsa/ui[3].label
+#: didstacked/ui[3].label
+#: didtwfe/ui[3].label
+msgid "Additional output"
+msgstr "追加の出力"
+
+#: did22/results/means.columns.title
+msgid "After"
+msgstr "後"
+
+#: didiag/results/honest.columns.title
+msgid "Allowed violation of parallel trends"
+msgstr "許容する平行トレンドからの乖離"
+
+#: dddcompare/results/summary.columns.title
+#: did22/results/summary.columns.title
+#: didbjs/results/summary.columns.title
+#: didcompare/results/summary.columns.title
+#: didcs/results/summary.columns.title
+#: didgardner/results/summary.columns.title
+#: didsa/results/summary.columns.title
+#: didstacked/results/summary.columns.title
+#: didtwfe/results/summary.columns.title
+msgid "ATT"
+msgstr "ATT"
+
+#: dosedid/results/curve.columns.title
+msgid "ATT(d)"
+msgstr "ATT(d)"
+
+#: dosedid/results/summary.title
+msgid "Average effects over all treated units"
+msgstr "処置された全個体の平均効果"
+
+#: didiag/results/bacon.columns.title
+msgid "Average estimate"
+msgstr "平均推定値"
+
+#: didiag/options/honestTarget/average.title
+msgid "Average of post-treatment periods"
+msgstr "処置後の全期間の平均"
+
+#: didiag/results/baconPlot.title
+msgid "Bacon decomposition"
+msgstr "ベーコン分解"
+
+#: package/analyses/didiag.title
+#: package/analyses/didiag.menuTitle
+#: didiag/options.title
+#: didiag/options.menuTitle
+#: didiag/ui.title
+#: didiag/results.title
+msgid "Bacon, Pre-trend and HonestDiD"
+msgstr "DiD診断と感度分析"
+
+#: did22/results/means.columns.title
+msgid "Before"
+msgstr "前"
+
+#: didcompare/options/bootReps.title
+#: didcs/options/bootReps.title
+msgid "Bootstrap draws"
+msgstr "ブートストラップ反復数"
+
+#: didcompare/results/dynamic.columns.superTitle
+msgid "Borusyak-Jaravel-Spiess"
+msgstr "Borusyak-Jaravel-Spiess"
+
+#: didcompare/options/bjs.title
+msgid "Borusyak, Jaravel & Spiess (imputation)"
+msgstr "Borusyak, Jaravel & Spiess(補完法)"
+
+#: package/analyses/didbjs.title
+#: package/analyses/didbjs.menuTitle
+#: didbjs/options.title
+#: didbjs/options.menuTitle
+#: didbjs/ui.title
+#: didbjs/results.title
+msgid "Borusyak, Jaravel & Spiess (Imputation)"
+msgstr "Borusyak, Jaravel & Spiess(補完法)"
+
+#: package/analyses/didbjs.description
+#: didbjs/options.description.main
+msgid ""
+"Borusyak, Jaravel and Spiess imputation estimator: unit and period effects "
+"are fitted on untreated observations and used to impute treated "
+"counterfactuals, with a pre-trend test on untreated observations."
+msgstr ""
+
+#: package/analyses/didcs.title
+#: package/analyses/didcs.menuTitle
+#: didcompare/options/cs.title
+#: didcs/options.title
+#: didcs/options.menuTitle
+#: didcs/ui.title
+#: didcs/results.title
+#: didiag/options/honestBase/cs.title
+msgid "Callaway & Sant'Anna"
+msgstr "Callaway & Sant'Anna"
+
+#: didcompare/options/bootstrap.title
+msgid "Callaway & Sant'Anna bootstrap standard errors"
+msgstr "Callaway & Sant'Anna のブートストラップ標準誤差"
+
+#: didcompare/options/csControl.title
+#: didiag/options/csControl.title
+msgid "Callaway & Sant'Anna control group"
+msgstr "Callaway & Sant'Anna のコントロール群"
+
+#: didcompare/options/aggCalendar.title
+#: didcompare/results/calTab.title
+msgid "Callaway & Sant'Anna effects by calendar time"
+msgstr "Callaway & Sant'Anna の暦時点別効果"
+
+#: didcompare/options/aggGroup.title
+#: didcompare/results/groupTab.title
+msgid "Callaway & Sant'Anna effects by cohort"
+msgstr "Callaway & Sant'Anna のコホート別効果"
+
+#: didcompare/options/csMethod.title
+msgid "Callaway & Sant'Anna estimation method (with covariates)"
+msgstr "Callaway & Sant'Anna の推定方法(共変量あり)"
+
+#: didcompare/results/gtPlot.title
+msgid "Callaway & Sant'Anna group-time effects"
+msgstr "Callaway & Sant'Anna の群×時点別効果"
+
+#: didcompare/options/showGT.title
+msgid "Callaway & Sant'Anna group-time effects (heat map)"
+msgstr "Callaway & Sant'Anna の群×時点別効果(ヒートマップ)"
+
+#: didcompare/ui[3].label
+msgid "Callaway & Sant'Anna settings"
+msgstr "Callaway & Sant'Anna の設定"
+
+#: package/analyses/didcs.description
+#: didcs/options.description.main
+msgid ""
+"Callaway and Sant'Anna group-time effects with never-treated or "
+"not-yet-treated controls, doubly robust, IPW or outcome-regression "
+"estimation, multiplier bootstrap, and aggregation to overall, event-time, "
+"cohort and calendar effects."
+msgstr ""
+
+#: didcompare/results/dynamic.columns.superTitle
+msgid "Callaway-Sant'Anna"
+msgstr "Callaway-Sant'Anna"
+
+#: package/datasets/CastleDoctrinelawsandhomicide(Cheng&Hoekstra).name
+msgid "Castle Doctrine laws and homicide (Cheng & Hoekstra)"
+msgstr "キャッスル・ドクトリン法と殺人(Cheng & Hoekstra)"
+
+#: did22/results/means.columns.title
+msgid "Change"
+msgstr "変化"
+
+#: didsetup/results/checks.columns.title
+msgid "Check"
+msgstr "チェック"
+
+#: package/analyses/didsetup.description
+#: didsetup/options.description.main
+msgid ""
+"Checks a panel before estimation (balance, duplicates, gaps, missing values, "
+"absorbing treatment, cohorts) and plots treatment status by unit and period."
+msgstr ""
+
+#: package/analyses/did22.title
+#: package/analyses/did22.menuTitle
+#: did22/options.title
+#: did22/options.menuTitle
+#: did22/ui.title
+#: did22/results.title
+msgid "Classic DiD (2x2)"
+msgstr "古典的DiD(2×2)"
+
+#: package/analyses/did22.description
+#: did22/options.description.main
+msgid ""
+"Classic two-group, two-period difference-in-differences: group means, "
+"regression DiD and doubly robust, IPW and outcome-regression estimators."
+msgstr ""
+
+#: didbjs/options/cluster.title
+#: didbjs/ui[0][5].label
+#: didcompare/options/cluster.title
+#: didcompare/ui[0][5].label
+#: didcs/options/cluster.title
+#: didcs/ui[0][5].label
+#: didgardner/options/cluster.title
+#: didgardner/ui[0][5].label
+#: didsa/options/cluster.title
+#: didsa/ui[0][5].label
+#: didstacked/options/cluster.title
+#: didstacked/ui[0][5].label
+#: didtwfe/options/cluster.title
+#: didtwfe/ui[0][5].label
+msgid "Cluster variable (optional)"
+msgstr "クラスター変数(任意)"
+
+#: didbjs/results/summary.columns.title
+#: didcompare/results/summary.columns.title
+#: didcs/results/summary.columns.title
+#: didgardner/results/summary.columns.title
+#: didsa/results/summary.columns.title
+#: didstacked/results/summary.columns.title
+#: didtwfe/results/summary.columns.title
+msgid "Clusters"
+msgstr "クラスター数"
+
+#: didcompare/results/groupTab.columns.title
+#: didcs/results/groupTab.columns.title
+msgid "Cohort (first treated period)"
+msgstr "コホート(初回処置期)"
+
+#: dddcompare/options/plotPalette/color.title
+#: did22/options/plotPalette/color.title
+#: didbjs/options/plotPalette/color.title
+#: didcompare/options/plotPalette/color.title
+#: didcs/options/plotPalette/color.title
+#: didgardner/options/plotPalette/color.title
+#: didiag/options/plotPalette/color.title
+#: didsa/options/plotPalette/color.title
+#: didsetup/options/plotPalette/color.title
+#: didstacked/options/plotPalette/color.title
+#: didtwfe/options/plotPalette/color.title
+#: dosedid/options/plotPalette/color.title
+msgid "Colors (colour-blind safe)"
+msgstr "カラー(色覚多様性に配慮)"
+
+#: package/analyses/didcompare.menuSubgroup
+#: didcompare/options.menuSubgroup
+msgid "Compare"
+msgstr "比較"
+
+#: package/analyses/didcompare.title
+#: package/analyses/didcompare.menuTitle
+#: didcompare/options.title
+#: didcompare/options.menuTitle
+#: didcompare/ui.title
+#: didcompare/results.title
+msgid "Compare DiD Estimators"
+msgstr "DiD推定量の比較"
+
+#: package.description
+msgid ""
+"Compare difference-in-differences estimators side by side: TWFE, "
+"Callaway-Sant'Anna, Sun-Abraham, Borusyak-Jaravel-Spiess, Gardner and "
+"stacked DiD, with panel diagnostics, classic 2x2 DiD, Goodman-Bacon "
+"decomposition, TWFE weights, pre-trend tests, HonestDiD, triple differences, "
+"continuous treatment and reproducible R code."
+msgstr ""
+
+#: package/analyses/didcompare.description
+#: didcompare/options.description.main
+msgid ""
+"Compares difference-in-differences estimators on one panel: two-way fixed "
+"effects, Callaway and Sant'Anna, Sun and Abraham, Borusyak-Jaravel-Spiess, "
+"Gardner and stacked DiD, with overall and event-study effects."
+msgstr ""
+
+#: didiag/results/bacon.columns.title
+msgid "Comparison"
+msgstr "比較"
+
+#: dddcompare/results/summary.columns.title
+#: didbjs/results/summary.columns.title
+#: didcompare/results/summary.columns.title
+#: didcs/results/summary.columns.title
+#: didgardner/results/summary.columns.title
+#: didsa/results/summary.columns.title
+#: didstacked/results/summary.columns.title
+#: didtwfe/results/summary.columns.title
+msgid "Comparison group"
+msgstr "比較群"
+
+#: dddcompare/results/summary.columns.superTitle
+#: did22/results/summary.columns.superTitle
+#: didbjs/results/summary.columns.superTitle
+#: didbjs/results/dynamic.columns.superTitle
+#: didcompare/results/summary.columns.superTitle
+#: didcompare/results/groupTab.columns.superTitle
+#: didcompare/results/calTab.columns.superTitle
+#: didcs/results/summary.columns.superTitle
+#: didcs/results/dynamic.columns.superTitle
+#: didcs/results/groupTab.columns.superTitle
+#: didcs/results/calTab.columns.superTitle
+#: didgardner/results/summary.columns.superTitle
+#: didgardner/results/dynamic.columns.superTitle
+#: didiag/results/honest.columns.superTitle
+#: didsa/results/summary.columns.superTitle
+#: didsa/results/dynamic.columns.superTitle
+#: didstacked/results/summary.columns.superTitle
+#: didstacked/results/dynamic.columns.superTitle
+#: didtwfe/results/summary.columns.superTitle
+#: didtwfe/results/dynamic.columns.superTitle
+#: dosedid/results/summary.columns.superTitle
+msgid "Confidence interval"
+msgstr "信頼区間"
+
+#: dddcompare/options/ciLevel.title
+#: did22/options/ciLevel.title
+#: didbjs/options/ciLevel.title
+#: didcompare/options/ciLevel.title
+#: didcs/options/ciLevel.title
+#: didgardner/options/ciLevel.title
+#: didiag/options/ciLevel.title
+#: didsa/options/ciLevel.title
+#: didstacked/options/ciLevel.title
+#: didtwfe/options/ciLevel.title
+#: dosedid/options/ciLevel.title
+msgid "Confidence level (%)"
+msgstr "信頼水準(%)"
+
+#: package/analyses/dosedid.title
+#: package/analyses/dosedid.menuTitle
+#: dosedid/options.title
+#: dosedid/options.menuTitle
+#: dosedid/ui.title
+#: dosedid/results.title
+msgid "Continuous Treatment DiD"
+msgstr "連続処置のDiD"
+
+#: dddcompare/options/csControl.title
+#: didcs/options/csControl.title
+#: dosedid/options/csControl.title
+msgid "Control group"
+msgstr "コントロール群"
+
+#: dddcompare/options/covs.title
+#: dddcompare/ui[0][5].label
+#: did22/options/covs.title
+#: did22/ui[0][4].label
+#: didbjs/options/covs.title
+#: didcompare/options/covs.title
+#: didcs/options/covs.title
+#: didgardner/options/covs.title
+#: didsa/options/covs.title
+#: didstacked/options/covs.title
+#: didtwfe/options/covs.title
+msgid "Covariates"
+msgstr "共変量"
+
+#: didbjs/ui[0][4].label
+#: didcompare/ui[0][4].label
+#: didcs/ui[0][4].label
+#: didgardner/ui[0][4].label
+#: didsa/ui[0][4].label
+#: didstacked/ui[0][4].label
+#: didtwfe/ui[0][4].label
+msgid "Covariates (optional)"
+msgstr "共変量(任意)"
+
+#: did22/results/info.title
+msgid "Data summary"
+msgstr "データの概要"
+
+#: didiag/results/pretest.columns.title
+msgid "df"
+msgstr "自由度"
+
+#: didiag/ui[2].label
+msgid "Diagnostics"
+msgstr "診断"
+
+#: package/analyses/didiag.menuSubgroup
+#: package/analyses/dosedid.menuSubgroup
+#: package/analyses/dddcompare.menuSubgroup
+#: dddcompare/options.menuSubgroup
+#: didiag/options.menuSubgroup
+#: dosedid/options.menuSubgroup
+msgid "Diagnostics and extensions"
+msgstr "診断と拡張"
+
+#: package/analyses/didiag.description
+#: didiag/options.description.main
+msgid ""
+"Diagnostics for staggered-adoption designs: Goodman-Bacon decomposition, "
+"TWFE weights, joint pre-trend tests and HonestDiD sensitivity analysis."
+msgstr ""
+
+#: package/analyses/didsetup.menuGroup
+#: package/analyses/did22.menuGroup
+#: package/analyses/didtwfe.menuGroup
+#: package/analyses/didcs.menuGroup
+#: package/analyses/didsa.menuGroup
+#: package/analyses/didbjs.menuGroup
+#: package/analyses/didgardner.menuGroup
+#: package/analyses/didstacked.menuGroup
+#: package/analyses/didcompare.menuGroup
+#: package/analyses/didiag.menuGroup
+#: package/analyses/dosedid.menuGroup
+#: package/analyses/dddcompare.menuGroup
+#: dddcompare/options.menuGroup
+#: did22/options.menuGroup
+#: didbjs/options.menuGroup
+#: didcompare/options.menuGroup
+#: didcs/options.menuGroup
+#: didgardner/options.menuGroup
+#: didiag/options.menuGroup
+#: didsa/options.menuGroup
+#: didsetup/options.menuGroup
+#: didstacked/options.menuGroup
+#: didtwfe/options.menuGroup
+#: dosedid/options.menuGroup
+msgid "DiD"
+msgstr "DiD"
+
+#: package.title
+msgid "Difference-in-Differences Family"
+msgstr "差の差法ファミリー"
+
+#: did22/results/summary.title
+msgid "DiD estimates (effect on the treated)"
+msgstr "DiD推定値(処置群への効果)"
+
+#: dddcompare/results/dynamic.columns.superTitle
+msgid "DiD, eligible only"
+msgstr "DiD(適格者のみ)"
+
+#: dddcompare/results/dynamic.columns.superTitle
+msgid "DiD, ineligible only"
+msgstr "DiD(非適格者のみ)"
+
+#: package/analyses/dosedid.description
+#: dosedid/options.description.main
+msgid ""
+"Difference-in-differences with a continuous treatment: dose-response ATT(d) "
+"and the marginal effect ACRT(d) with their averages."
+msgstr ""
+
+#: dosedid/results/curve.columns.title
+msgid "Dose"
+msgstr "処置量"
+
+#: dosedid/options/dose.title
+#: dosedid/ui[0][4].label
+msgid "Dose (constant within unit, 0 if untreated)"
+msgstr "処置量(個体内で一定、未処置は0)"
+
+#: dosedid/results/curve.title
+msgid "Dose-response at selected doses"
+msgstr "選択した処置量での用量反応"
+
+#: dosedid/results/plot.title
+msgid "Dose-response curves"
+msgstr "用量反応曲線"
+
+#: dddcompare/options/csMethod/dr.title
+#: didcompare/options/csMethod/dr.title
+#: didcs/options/csMethod/dr.title
+msgid "Doubly robust"
+msgstr "二重頑健"
+
+#: did22/options/dr.title
+msgid "Doubly robust (improved)"
+msgstr "二重頑健(改良版)"
+
+#: did22/options/drtrad.title
+msgid "Doubly robust (traditional)"
+msgstr "二重頑健(従来版)"
+
+#: dddcompare/results/dynamic.title
+#: didbjs/results/dynamic.title
+#: didcompare/results/dynamic.title
+#: didcs/results/dynamic.title
+#: didgardner/results/dynamic.title
+#: didsa/results/dynamic.title
+#: didstacked/results/dynamic.title
+#: didtwfe/results/dynamic.title
+msgid "Dynamic effects by event time (reference period = -1)"
+msgstr "イベント時点別の動学的効果(基準期 = -1)"
+
+#: didiag/options/honestTarget.title
+msgid "Effect of interest"
+msgstr "関心のある効果"
+
+#: didcs/options/aggCalendar.title
+#: didcs/results/calTab.title
+msgid "Effects by calendar time"
+msgstr "暦時点別の効果"
+
+#: didcs/options/aggGroup.title
+#: didcs/results/groupTab.title
+msgid "Effects by cohort"
+msgstr "コホート別の効果"
+
+#: dddcompare/options/part.title
+#: dddcompare/ui[0][4].label
+msgid "Eligibility (0/1)"
+msgstr "適格性(0/1)"
+
+#: dddcompare/options/plotCI/bars.title
+#: didbjs/options/plotCI/bars.title
+#: didcompare/options/plotCI/bars.title
+#: didcs/options/plotCI/bars.title
+#: didgardner/options/plotCI/bars.title
+#: didsa/options/plotCI/bars.title
+#: didstacked/options/plotCI/bars.title
+#: didtwfe/options/plotCI/bars.title
+msgid "Error bars"
+msgstr "エラーバー"
+
+#: dddcompare/results/dynamic.columns.title
+#: didbjs/results/dynamic.columns.title
+#: didcompare/results/dynamic.columns.title
+#: didcompare/results/groupTab.columns.title
+#: didcompare/results/calTab.columns.title
+#: didcs/results/dynamic.columns.title
+#: didcs/results/groupTab.columns.title
+#: didcs/results/calTab.columns.title
+#: didgardner/results/dynamic.columns.title
+#: didsa/results/dynamic.columns.title
+#: didstacked/results/dynamic.columns.title
+#: didtwfe/results/dynamic.columns.title
+#: dosedid/results/summary.columns.title
+msgid "Estimate"
+msgstr "推定値"
+
+#: dddcompare/options/csMethod.title
+msgid "Estimation method"
+msgstr "推定方法"
+
+#: didcs/options/csMethod.title
+msgid "Estimation method (with covariates)"
+msgstr "推定方法(共変量あり)"
+
+#: dddcompare/results/summary.columns.title
+#: did22/results/summary.columns.title
+#: didbjs/results/summary.columns.title
+#: didcompare/results/summary.columns.title
+#: didcs/results/summary.columns.title
+#: didgardner/results/summary.columns.title
+#: didiag/results/pretest.columns.title
+#: didsa/results/summary.columns.title
+#: didstacked/results/summary.columns.title
+#: didtwfe/results/summary.columns.title
+msgid "Estimator"
+msgstr "推定量"
+
+#: package/analyses/didtwfe.menuSubgroup
+#: package/analyses/didcs.menuSubgroup
+#: package/analyses/didsa.menuSubgroup
+#: package/analyses/didbjs.menuSubgroup
+#: package/analyses/didgardner.menuSubgroup
+#: package/analyses/didstacked.menuSubgroup
+#: didbjs/options.menuSubgroup
+#: didcompare/ui[2].label
+#: didcs/options.menuSubgroup
+#: didgardner/options.menuSubgroup
+#: didsa/options.menuSubgroup
+#: didstacked/options.menuSubgroup
+#: didtwfe/options.menuSubgroup
+msgid "Estimators"
+msgstr "推定量"
+
+#: didbjs/results/plot.title
+#: didcs/results/plot.title
+#: didgardner/results/plot.title
+#: didsa/results/plot.title
+#: didstacked/results/plot.title
+#: didtwfe/results/plot.title
+msgid "Event study"
+msgstr "イベントスタディ"
+
+#: dddcompare/results/plot.title
+#: didcompare/results/plot.title
+msgid "Event study comparison"
+msgstr "イベントスタディの比較"
+
+#: didiag/options/honestBase.title
+msgid "Event study to analyse"
+msgstr "分析するイベントスタディ"
+
+#: dddcompare/results/dynamic.columns.title
+#: didbjs/results/dynamic.columns.title
+#: didcompare/results/dynamic.columns.title
+#: didcs/results/dynamic.columns.title
+#: didgardner/results/dynamic.columns.title
+#: didsa/results/dynamic.columns.title
+#: didstacked/results/dynamic.columns.title
+#: didtwfe/results/dynamic.columns.title
+msgid "Event time"
+msgstr "イベント時点"
+
+#: didbjs/ui[2].label
+#: didcompare/ui[4].label
+#: didcs/ui[3].label
+#: didgardner/ui[2].label
+#: didsa/ui[2].label
+#: didstacked/ui[2].label
+#: didtwfe/ui[2].label
+msgid "Event window and confidence level"
+msgstr "イベント窓と信頼水準"
+
+#: didiag/ui[4].label
+msgid "Event window and settings"
+msgstr "イベント窓と設定"
+
+#: dddcompare/options/minE.title
+#: didbjs/options/minE.title
+#: didcompare/options/minE.title
+#: didcs/options/minE.title
+#: didgardner/options/minE.title
+#: didiag/options/minE.title
+#: didsa/options/minE.title
+#: didstacked/options/minE.title
+#: didtwfe/options/minE.title
+msgid "Event window, from"
+msgstr "イベント窓:開始"
+
+#: dddcompare/options/maxE.title
+#: didbjs/options/maxE.title
+#: didcompare/options/maxE.title
+#: didcs/options/maxE.title
+#: didgardner/options/maxE.title
+#: didiag/options/maxE.title
+#: didsa/options/maxE.title
+#: didstacked/options/maxE.title
+#: didtwfe/options/maxE.title
+msgid "Event window, to"
+msgstr "イベント窓:終了"
+
+#: didiag/options/honestTarget/first.title
+msgid "First post-treatment period (e = 0)"
+msgstr "処置後の最初の期間(e = 0)"
+
+#: dddcompare/options/treat.title
+#: dddcompare/ui[0][3].label
+#: didsetup/results/cohorts.columns.title
+#: dosedid/options/treat.title
+#: dosedid/ui[0][3].label
+msgid "First treated period"
+msgstr "初回処置期"
+
+#: didbjs/options/treatType/cohort.title
+#: didcompare/options/treatType/cohort.title
+#: didcs/options/treatType/cohort.title
+#: didgardner/options/treatType/cohort.title
+#: didiag/options/treatType/cohort.title
+#: didsa/options/treatType/cohort.title
+#: didsetup/options/treatType/cohort.title
+#: didstacked/options/treatType/cohort.title
+#: didtwfe/options/treatType/cohort.title
+msgid "First treated period (0 or missing = never)"
+msgstr "初回処置期(0または欠損 = 処置なし)"
+
+#: didcompare/options/showForest.title
+msgid "Forest plot of overall ATT"
+msgstr "全体ATTのフォレストプロット"
+
+#: didcompare/results/dynamic.columns.superTitle
+msgid "Gardner (did2s)"
+msgstr "Gardner (did2s)"
+
+#: didcompare/options/gardner.title
+msgid "Gardner two-stage (did2s)"
+msgstr "Gardner 二段階推定(did2s)"
+
+#: package/analyses/didgardner.title
+#: package/analyses/didgardner.menuTitle
+#: didgardner/options.title
+#: didgardner/options.menuTitle
+#: didgardner/ui.title
+#: didgardner/results.title
+msgid "Gardner Two-Stage (did2s)"
+msgstr "Gardner 二段階推定(did2s)"
+
+#: package/analyses/didgardner.description
+#: didgardner/options.description.main
+msgid ""
+"Gardner two-stage difference-in-differences: untreated outcomes are "
+"residualised on unit and period effects, then regressed on treatment, with "
+"corrected clustered standard errors."
+msgstr ""
+
+#: didiag/options/bacon.title
+msgid "Goodman-Bacon decomposition"
+msgstr "Goodman-Bacon分解"
+
+#: didiag/results/bacon.title
+msgid "Goodman-Bacon decomposition of the TWFE estimate"
+msgstr "TWFE推定値のGoodman-Bacon分解"
+
+#: dddcompare/options/plotPalette/gray.title
+#: did22/options/plotPalette/gray.title
+#: didbjs/options/plotPalette/gray.title
+#: didcompare/options/plotPalette/gray.title
+#: didcs/options/plotPalette/gray.title
+#: didgardner/options/plotPalette/gray.title
+#: didiag/options/plotPalette/gray.title
+#: didsa/options/plotPalette/gray.title
+#: didsetup/options/plotPalette/gray.title
+#: didstacked/options/plotPalette/gray.title
+#: didtwfe/options/plotPalette/gray.title
+#: dosedid/options/plotPalette/gray.title
+msgid "Grayscale (for printing)"
+msgstr "グレースケール(印刷用)"
+
+#: did22/results/means.columns.title
+msgid "Group"
+msgstr "群"
+
+#: did22/results/plot.title
+msgid "Group means before and after"
+msgstr "処置前後の群別平均"
+
+#: didcs/results/gtPlot.title
+msgid "Group-time effects"
+msgstr "グループ・時点別の効果"
+
+#: didcs/options/showGT.title
+msgid "Group-time effects (heat map)"
+msgstr "グループ・時点別の効果(ヒートマップ)"
+
+#: didiag/results/honest.title
+msgid "HonestDiD robust confidence intervals"
+msgstr "HonestDiDによる頑健な信頼区間"
+
+#: didiag/options/honest.title
+msgid "HonestDiD sensitivity analysis (slow)"
+msgstr "HonestDiD感度分析(時間がかかります)"
+
+#: didiag/results/notes.title
+msgid "How to read these diagnostics"
+msgstr "診断結果の読み方"
+
+#: dddcompare/results/notes.title
+#: did22/results/notes.title
+#: dosedid/results/notes.title
+msgid "How to read these results"
+msgstr "結果の読み方"
+
+#: dddcompare/options/csMethod/ipw.title
+#: did22/options/ipw.title
+#: didcompare/options/csMethod/ipw.title
+#: didcs/options/csMethod/ipw.title
+msgid "Inverse probability weighting"
+msgstr "逆確率重み付け"
+
+#: didiag/options/pretest.title
+msgid "Joint pre-trend tests"
+msgstr "事前トレンドの同時検定"
+
+#: didiag/results/pretest.title
+msgid "Joint test of pre-treatment effects (null: all equal zero)"
+msgstr "処置前効果の同時検定(帰無仮説:すべて0)"
+
+#: didiag/options/honestMbar.title
+msgid "Largest relative magnitude (Mbar)"
+msgstr "相対的大きさの上限(Mbar)"
+
+#: dosedid/results/curve.columns.superTitle
+msgid "Level effect"
+msgstr "水準の効果"
+
+#: dddcompare/results/summary.columns.title
+#: did22/results/summary.columns.title
+#: didbjs/results/summary.columns.title
+#: didbjs/results/dynamic.columns.title
+#: didcompare/results/summary.columns.title
+#: didcompare/results/groupTab.columns.title
+#: didcompare/results/calTab.columns.title
+#: didcs/results/summary.columns.title
+#: didcs/results/dynamic.columns.title
+#: didcs/results/groupTab.columns.title
+#: didcs/results/calTab.columns.title
+#: didgardner/results/summary.columns.title
+#: didgardner/results/dynamic.columns.title
+#: didiag/results/honest.columns.title
+#: didsa/results/summary.columns.title
+#: didsa/results/dynamic.columns.title
+#: didstacked/results/summary.columns.title
+#: didstacked/results/dynamic.columns.title
+#: didtwfe/results/summary.columns.title
+#: didtwfe/results/dynamic.columns.title
+#: dosedid/results/summary.columns.title
+msgid "Lower"
+msgstr "下限"
+
+#: dosedid/results/curve.columns.superTitle
+msgid "Marginal effect"
+msgstr "限界効果"
+
+#: did22/results/means.title
+msgid "Mean outcome by group and period"
+msgstr "群・時点別の結果変数の平均"
+
+#: package/datasets/Minimumwageandteenemployment(mpdta,Callaway&Sant'Anna).name
+msgid "Minimum wage and teen employment (mpdta, Callaway & Sant'Anna)"
+msgstr "最低賃金と10代の雇用(mpdta、Callaway & Sant'Anna)"
+
+#: didcs/options/bootstrap.title
+msgid "Multiplier bootstrap standard errors"
+msgstr "乗数ブートストラップ標準誤差"
+
+#: didiag/results/weights.columns.title
+msgid "Negative weight"
+msgstr "負のウェイト"
+
+#: didiag/results/weights.columns.title
+msgid "Negative-weight obs."
+msgstr "負のウェイトの観測数"
+
+#: didcompare/options/csControl/nevertreated.title
+#: didcs/options/csControl/nevertreated.title
+#: didiag/options/csControl/nevertreated.title
+#: dosedid/options/csControl/nevertreated.title
+msgid "Never treated"
+msgstr "一度も処置されない"
+
+#: dddcompare/options/csControl/nevertreated.title
+msgid "Never-treated groups"
+msgstr "一度も処置されない群"
+
+#: didcompare/options/csControl/notyettreated.title
+#: didcs/options/csControl/notyettreated.title
+#: didiag/options/csControl/notyettreated.title
+#: dosedid/options/csControl/notyettreated.title
+msgid "Not yet treated"
+msgstr "未処置(処置前)"
+
+#: dddcompare/options/csControl/notyettreated.title
+msgid "Not-yet-treated groups"
+msgstr "未処置(処置前)の群"
+
+#: dddcompare/results/summary.columns.title
+#: did22/results/summary.columns.title
+#: didbjs/results/summary.columns.title
+#: didcompare/results/summary.columns.title
+#: didcs/results/summary.columns.title
+#: didgardner/results/summary.columns.title
+#: didiag/results/pretest.columns.title
+#: didiag/results/honest.columns.title
+#: didsa/results/summary.columns.title
+#: didstacked/results/summary.columns.title
+#: didtwfe/results/summary.columns.title
+#: dosedid/results/summary.columns.title
+msgid "Note"
+msgstr "備考"
+
+#: dosedid/options/knots.title
+msgid "Number of interior knots"
+msgstr "内部ノットの数"
+
+#: did22/results/means.columns.title
+#: didbjs/results/summary.columns.title
+#: didcompare/results/summary.columns.title
+#: didcs/results/summary.columns.title
+#: didgardner/results/summary.columns.title
+#: didsa/results/summary.columns.title
+#: didstacked/results/summary.columns.title
+#: didtwfe/results/summary.columns.title
+msgid "Observations"
+msgstr "観測数"
+
+#: dddcompare/options/dep.title
+#: dddcompare/ui[0][0].label
+#: did22/options/dep.title
+#: did22/ui[0][0].label
+#: didbjs/options/dep.title
+#: didbjs/ui[0][0].label
+#: didcompare/options/dep.title
+#: didcompare/ui[0][0].label
+#: didcs/options/dep.title
+#: didcs/ui[0][0].label
+#: didgardner/options/dep.title
+#: didgardner/ui[0][0].label
+#: didiag/options/dep.title
+#: didiag/ui[0][0].label
+#: didsa/options/dep.title
+#: didsa/ui[0][0].label
+#: didstacked/options/dep.title
+#: didstacked/ui[0][0].label
+#: didtwfe/options/dep.title
+#: didtwfe/ui[0][0].label
+#: dosedid/options/dep.title
+#: dosedid/ui[0][0].label
+msgid "Outcome"
+msgstr "結果変数"
+
+#: didsetup/options/dep.title
+#: didsetup/ui[0][0].label
+msgid "Outcome (optional)"
+msgstr "結果変数(任意)"
+
+#: dddcompare/options/csMethod/reg.title
+#: did22/options/or.title
+#: didcompare/options/csMethod/reg.title
+#: didcs/options/csMethod/reg.title
+msgid "Outcome regression"
+msgstr "結果回帰"
+
+#: dddcompare/results/summary.title
+#: didbjs/results/summary.title
+#: didcs/results/summary.title
+#: didgardner/results/summary.title
+#: didsa/results/summary.title
+#: didstacked/results/summary.title
+#: didtwfe/results/summary.title
+msgid "Overall ATT"
+msgstr "全体のATT"
+
+#: didcompare/results/summary.title
+#: didcompare/results/forest.title
+msgid "Overall ATT by estimator"
+msgstr "推定量別の全体ATT"
+
+#: didsetup/results/checks.title
+msgid "Panel checks"
+msgstr "パネルのチェック"
+
+#: package/analyses/didsetup.title
+#: package/analyses/didsetup.menuTitle
+#: didsetup/options.title
+#: didsetup/options.menuTitle
+#: didsetup/ui.title
+#: didsetup/results.title
+msgid "Panel Structure Check"
+msgstr "DiDパネル診断"
+
+#: dddcompare/results/info.title
+#: didbjs/results/info.title
+#: didcompare/results/info.title
+#: didcs/results/info.title
+#: didgardner/results/info.title
+#: didiag/results/info.title
+#: didsa/results/info.title
+#: didstacked/results/info.title
+#: didtwfe/results/info.title
+#: dosedid/results/info.title
+msgid "Panel summary"
+msgstr "パネルの概要"
+
+#: dosedid/results/summary.columns.title
+msgid "Parameter"
+msgstr "パラメータ"
+
+#: didcompare/results/calTab.columns.title
+#: didcs/results/calTab.columns.title
+msgid "Period"
+msgstr "時点"
+
+#: did22/options/period.title
+#: did22/ui[0][2].label
+msgid "Period (two values)"
+msgstr "時点(2つの値)"
+
+#: dddcompare/options/plotPalette.title
+#: did22/options/plotPalette.title
+#: didbjs/options/plotPalette.title
+#: didcompare/options/plotPalette.title
+#: didcs/options/plotPalette.title
+#: didgardner/options/plotPalette.title
+#: didiag/options/plotPalette.title
+#: didsa/options/plotPalette.title
+#: didsetup/options/plotPalette.title
+#: didstacked/options/plotPalette.title
+#: didtwfe/options/plotPalette.title
+#: dosedid/options/plotPalette.title
+msgid "Plot colors"
+msgstr "図の色"
+
+#: dddcompare/ui[6].label
+#: did22/ui[3].label
+#: didbjs/ui[4].label
+#: didcompare/ui[6].label
+#: didcs/ui[5].label
+#: didgardner/ui[4].label
+#: didiag/ui[5].label
+#: didsa/ui[4].label
+#: didsetup/ui[2].label
+#: didstacked/ui[4].label
+#: didtwfe/ui[4].label
+#: dosedid/ui[5].label
+msgid "Plot style"
+msgstr "図のスタイル"
+
+#: didsetup/results/cohorts.columns.title
+msgid "Post-treatment periods"
+msgstr "処置後の期間数"
+
+#: didsetup/results/cohorts.columns.title
+msgid "Pre-treatment periods"
+msgstr "処置前の期間数"
+
+#: didcompare/options/seed.title
+#: didcs/options/seed.title
+msgid "Random seed"
+msgstr "乱数シード"
+
+#: did22/options/ols.title
+msgid "Regression DiD (OLS)"
+msgstr "回帰DiD(OLS)"
+
+#: didbjs/results/code.title
+#: didcompare/results/code.title
+#: didcs/results/code.title
+#: didgardner/results/code.title
+#: didsa/results/code.title
+#: didstacked/results/code.title
+#: didtwfe/results/code.title
+msgid "Reproducible R code"
+msgstr "再現可能なRコード"
+
+#: didsetup/results/checks.columns.title
+msgid "Result"
+msgstr "結果"
+
+#: didcompare/options/weights.title
+#: didcompare/ui[0][6].label
+#: didcs/options/weights.title
+#: didcs/ui[0][6].label
+#: didgardner/options/weights.title
+#: didgardner/ui[0][6].label
+#: didsa/options/weights.title
+#: didsa/ui[0][6].label
+#: didstacked/options/weights.title
+#: didstacked/ui[0][6].label
+#: didtwfe/options/weights.title
+#: didtwfe/ui[0][6].label
+msgid "Sampling weights (optional)"
+msgstr "標本ウェイト(任意)"
+
+#: dddcompare/results/summary.columns.title
+#: dddcompare/results/dynamic.columns.title
+#: did22/results/summary.columns.title
+#: didbjs/results/summary.columns.title
+#: didbjs/results/dynamic.columns.title
+#: didcompare/results/summary.columns.title
+#: didcompare/results/dynamic.columns.title
+#: didcompare/results/groupTab.columns.title
+#: didcompare/results/calTab.columns.title
+#: didcs/results/summary.columns.title
+#: didcs/results/dynamic.columns.title
+#: didcs/results/groupTab.columns.title
+#: didcs/results/calTab.columns.title
+#: didgardner/results/summary.columns.title
+#: didgardner/results/dynamic.columns.title
+#: didsa/results/summary.columns.title
+#: didsa/results/dynamic.columns.title
+#: didstacked/results/summary.columns.title
+#: didstacked/results/dynamic.columns.title
+#: didtwfe/results/summary.columns.title
+#: didtwfe/results/dynamic.columns.title
+#: dosedid/results/summary.columns.title
+#: dosedid/results/curve.columns.title
+msgid "SE"
+msgstr "標準誤差"
+
+#: didiag/ui[3].label
+msgid "Sensitivity analysis"
+msgstr "感度分析"
+
+#: didiag/results/honestPlot.title
+msgid "Sensitivity of the effect to violations of parallel trends"
+msgstr "平行トレンドの違反に対する効果の感度"
+
+#: didcs/ui[2].label
+msgid "Settings"
+msgstr "設定"
+
+#: dddcompare/options/plotCI/ribbon.title
+#: didbjs/options/plotCI/ribbon.title
+#: didcompare/options/plotCI/ribbon.title
+#: didcs/options/plotCI/ribbon.title
+#: didgardner/options/plotCI/ribbon.title
+#: didsa/options/plotCI/ribbon.title
+#: didstacked/options/plotCI/ribbon.title
+#: didtwfe/options/plotCI/ribbon.title
+msgid "Shaded bands"
+msgstr "帯(網掛け)"
+
+#: didsetup/results/cohorts.columns.title
+msgid "Share of units"
+msgstr "個体の割合"
+
+#: dddcompare/options/plotCI.title
+#: didbjs/options/plotCI.title
+#: didcompare/options/plotCI.title
+#: didcs/options/plotCI.title
+#: didgardner/options/plotCI.title
+#: didsa/options/plotCI.title
+#: didstacked/options/plotCI.title
+#: didtwfe/options/plotCI.title
+msgid "Show confidence intervals as"
+msgstr "信頼区間の表示方法"
+
+#: didbjs/options/showCode.title
+#: didcompare/options/showCode.title
+#: didcs/options/showCode.title
+#: didgardner/options/showCode.title
+#: didsa/options/showCode.title
+#: didstacked/options/showCode.title
+#: didtwfe/options/showCode.title
+msgid "Show reproducible R code"
+msgstr "再現可能なRコードを表示"
+
+#: package/datasets/Simulatedcontinuoustreatment.name
+msgid "Simulated continuous treatment"
+msgstr "シミュレーション:連続処置"
+
+#: package/datasets/Simulatedstaggeredadoption.name
+msgid "Simulated staggered adoption"
+msgstr "シミュレーション:段階的導入"
+
+#: package/datasets/Simulatedtripledifferences.name
+msgid "Simulated triple differences"
+msgstr "シミュレーション:三重差分"
+
+#: package/datasets/Simulatedtwo-periodDiD.name
+msgid "Simulated two-period DiD"
+msgstr "シミュレーション:2期間のDiD"
+
+#: dddcompare/options/plotDodge.title
+#: didcompare/options/plotDodge.title
+msgid "Spacing between estimators (error bars)"
+msgstr "推定量どうしの間隔(エラーバー)"
+
+#: dosedid/options/degree.title
+msgid "Spline degree"
+msgstr "スプラインの次数"
+
+#: package/analyses/didstacked.title
+#: package/analyses/didstacked.menuTitle
+#: didcompare/options/stacked.title
+#: didcompare/results/dynamic.columns.superTitle
+#: didstacked/options.title
+#: didstacked/options.menuTitle
+#: didstacked/ui.title
+#: didstacked/results.title
+msgid "Stacked DiD"
+msgstr "スタック型DiD"
+
+#: package/analyses/didstacked.description
+#: didstacked/options.description.main
+msgid ""
+"Stacked difference-in-differences: one sub-experiment per treatment cohort "
+"with clean controls, stacked with unit-by-experiment and "
+"period-by-experiment fixed effects."
+msgstr ""
+
+#: didsetup/results/checks.columns.title
+msgid "Status"
+msgstr "状態"
+
+#: package/analyses/didsa.title
+#: package/analyses/didsa.menuTitle
+#: didcompare/options/sa.title
+#: didiag/options/honestBase/sa.title
+#: didsa/options.title
+#: didsa/options.menuTitle
+#: didsa/ui.title
+#: didsa/results.title
+msgid "Sun & Abraham"
+msgstr "Sun & Abraham"
+
+#: package/analyses/didsa.description
+#: didsa/options.description.main
+msgid ""
+"Sun and Abraham interaction-weighted estimator with cohort-by-event-time "
+"effects and never-treated controls, with overall and event-study effects."
+msgstr ""
+
+#: didcompare/results/dynamic.columns.superTitle
+msgid "Sun-Abraham"
+msgstr "Sun-Abraham"
+
+#: dddcompare/options/time.title
+#: dddcompare/ui[0][2].label
+#: didbjs/options/time.title
+#: didbjs/ui[0][2].label
+#: didcompare/options/time.title
+#: didcompare/ui[0][2].label
+#: didcs/options/time.title
+#: didcs/ui[0][2].label
+#: didgardner/options/time.title
+#: didgardner/ui[0][2].label
+#: didiag/options/time.title
+#: didiag/ui[0][2].label
+#: didsa/options/time.title
+#: didsa/ui[0][2].label
+#: didsetup/options/time.title
+#: didsetup/ui[0][2].label
+#: didstacked/options/time.title
+#: didstacked/ui[0][2].label
+#: didtwfe/options/time.title
+#: didtwfe/ui[0][2].label
+#: dosedid/options/time.title
+#: dosedid/ui[0][2].label
+msgid "Time period"
+msgstr "時点"
+
+#: didiag/results/weights.columns.title
+msgid "Total weight"
+msgstr "ウェイト合計"
+
+#: did22/options/group.title
+#: did22/ui[0][1].label
+msgid "Treated group (0/1)"
+msgstr "処置群(0/1)"
+
+#: didiag/results/weights.columns.title
+msgid "Treated obs."
+msgstr "処置された観測数"
+
+#: didiag/results/weights.columns.title
+msgid "Treatment cohort"
+msgstr "処置コホート"
+
+#: didsetup/results/cohorts.title
+msgid "Treatment cohorts"
+msgstr "処置コホート"
+
+#: didbjs/options/treatType/indicator.title
+#: didcompare/options/treatType/indicator.title
+#: didcs/options/treatType/indicator.title
+#: didgardner/options/treatType/indicator.title
+#: didiag/options/treatType/indicator.title
+#: didsa/options/treatType/indicator.title
+#: didsetup/options/treatType/indicator.title
+#: didstacked/options/treatType/indicator.title
+#: didtwfe/options/treatType/indicator.title
+msgid "Treatment indicator D (0/1)"
+msgstr "処置指標 D(0/1)"
+
+#: didsetup/results/plot.title
+msgid "Treatment status by unit and period"
+msgstr "個体・時点別の処置状態"
+
+#: didbjs/options/treat.title
+#: didbjs/ui[0][3].label
+#: didcompare/options/treat.title
+#: didcompare/ui[0][3].label
+#: didcs/options/treat.title
+#: didcs/ui[0][3].label
+#: didgardner/options/treat.title
+#: didgardner/ui[0][3].label
+#: didiag/options/treat.title
+#: didiag/ui[0][3].label
+#: didsa/options/treat.title
+#: didsa/ui[0][3].label
+#: didsetup/options/treat.title
+#: didsetup/ui[0][3].label
+#: didstacked/options/treat.title
+#: didstacked/ui[0][3].label
+#: didtwfe/options/treat.title
+#: didtwfe/ui[0][3].label
+msgid "Treatment variable"
+msgstr "処置変数"
+
+#: didbjs/options/treatType.title
+#: didcompare/options/treatType.title
+#: didcs/options/treatType.title
+#: didgardner/options/treatType.title
+#: didiag/options/treatType.title
+#: didsa/options/treatType.title
+#: didsetup/options/treatType.title
+#: didstacked/options/treatType.title
+#: didtwfe/options/treatType.title
+msgid "Treatment variable is"
+msgstr "処置変数の種類"
+
+#: dddcompare/results/dynamic.columns.superTitle
+msgid "Triple difference (DDD)"
+msgstr "三重差分(DDD)"
+
+#: package/analyses/dddcompare.title
+#: package/analyses/dddcompare.menuTitle
+#: dddcompare/options.title
+#: dddcompare/options.menuTitle
+#: dddcompare/ui.title
+#: dddcompare/results.title
+msgid "Triple Differences (DDD)"
+msgstr "三重差分(DDD)"
+
+#: package/analyses/dddcompare.description
+#: dddcompare/options.description.main
+msgid ""
+"Triple differences with an eligibility variable, shown next to "
+"difference-in-differences on eligible-only and ineligible-only units."
+msgstr ""
+
+#: didcompare/results/dynamic.columns.superTitle
+msgid "TWFE"
+msgstr "TWFE"
+
+#: didiag/options/weights.title
+#: didiag/results/weights.title
+msgid "TWFE weights on treated observations"
+msgstr "処置された観測に対するTWFEウェイト"
+
+#: didcompare/options/twfe.title
+msgid "Two-way fixed effects (TWFE)"
+msgstr "two-way固定効果(TWFE)"
+
+#: package/analyses/didtwfe.title
+#: package/analyses/didtwfe.menuTitle
+#: didtwfe/options.title
+#: didtwfe/options.menuTitle
+#: didtwfe/ui.title
+#: didtwfe/results.title
+msgid "Two-Way Fixed Effects (TWFE)"
+msgstr "two-way固定効果(TWFE)"
+
+#: package/analyses/didtwfe.description
+#: didtwfe/options.description.main
+msgid ""
+"Two-way fixed effects regression of the outcome on the treatment indicator "
+"with unit and period fixed effects, static and event study, with a warning "
+"that TWFE can be biased under staggered adoption."
+msgstr ""
+
+#: dddcompare/options/id.title
+#: dddcompare/ui[0][1].label
+#: didbjs/options/id.title
+#: didbjs/ui[0][1].label
+#: didcompare/options/id.title
+#: didcompare/ui[0][1].label
+#: didcs/options/id.title
+#: didcs/ui[0][1].label
+#: didgardner/options/id.title
+#: didgardner/ui[0][1].label
+#: didiag/options/id.title
+#: didiag/ui[0][1].label
+#: didsa/options/id.title
+#: didsa/ui[0][1].label
+#: didsetup/options/id.title
+#: didsetup/ui[0][1].label
+#: didstacked/options/id.title
+#: didstacked/ui[0][1].label
+#: didtwfe/options/id.title
+#: didtwfe/ui[0][1].label
+#: dosedid/options/id.title
+#: dosedid/ui[0][1].label
+msgid "Unit ID"
+msgstr "個体ID"
+
+#: did22/options/id.title
+#: did22/ui[0][3].label
+msgid "Unit ID (optional, panel data)"
+msgstr "個体ID(任意、パネルデータ)"
+
+#: didsetup/results/cohorts.columns.title
+msgid "Units"
+msgstr "個体数"
+
+#: dddcompare/results/summary.columns.title
+#: did22/results/summary.columns.title
+#: didbjs/results/summary.columns.title
+#: didbjs/results/dynamic.columns.title
+#: didcompare/results/summary.columns.title
+#: didcompare/results/groupTab.columns.title
+#: didcompare/results/calTab.columns.title
+#: didcs/results/summary.columns.title
+#: didcs/results/dynamic.columns.title
+#: didcs/results/groupTab.columns.title
+#: didcs/results/calTab.columns.title
+#: didgardner/results/summary.columns.title
+#: didgardner/results/dynamic.columns.title
+#: didiag/results/honest.columns.title
+#: didsa/results/summary.columns.title
+#: didsa/results/dynamic.columns.title
+#: didstacked/results/summary.columns.title
+#: didstacked/results/dynamic.columns.title
+#: didtwfe/results/summary.columns.title
+#: didtwfe/results/dynamic.columns.title
+#: dosedid/results/summary.columns.title
+msgid "Upper"
+msgstr "上限"
+
+#: didiag/results/pretest.columns.title
+msgid "Wald chi-square"
+msgstr "Wald カイ二乗"
+
+#: didiag/results/bacon.columns.title
+msgid "Weight"
+msgstr "ウェイト"
+
+#: didcompare/results/notes.title
+msgid "What each estimator estimates"
+msgstr "各推定量が推定するもの"
+
+#: didsetup/results/notes.title
+msgid "What to look for"
+msgstr "確認するポイント"

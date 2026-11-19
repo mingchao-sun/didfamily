@@ -1,0 +1,15 @@
+Package: didfamily
+Type: Package
+Title: Difference-in-Differences Family for jamovi
+Version: 1.0.0
+Author: Mingchao Sun
+Maintainer: Mingchao Sun <mingchao.sun@hotmail.com>
+URL: https://github.com/mingchao-sun/didfamily
+BugReports: https://github.com/mingchao-sun/didfamily/issues
+Description: A jamovi module that compares difference-in-differences estimators side by side.
+License: GPL-2 | GPL-3
+Encoding: UTF-8
+Imports: jmvcore (>= 0.8.5), R6, ggplot2, fixest, did, didimputation, bacondecomp, Matrix, rlang, foreach, matrixStats, mvtnorm, pracma, purrr, tibble, TruncatedNormal, lpSolveAPI, Rglpk, triplediff, contdid
+
+
+

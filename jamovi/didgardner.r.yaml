@@ -1,0 +1,107 @@
+---
+name:  didgardner
+title: Gardner Two-Stage (did2s)
+jrs:   '1.1'
+
+items:
+    - name: guide
+      title: Data and setup guide
+      type: Html
+      visible: (showGuide)
+
+    - name: info
+      title: Panel summary
+      type: Html
+
+    - name: summary
+      title: Overall ATT
+      type: Table
+      rows: 0
+      clearWith: [plotPalette, plotCI, dep, id, time, treat, treatType, covs, cluster, weights, ciLevel]
+      columns:
+        - name: method
+          title: Estimator
+          type: text
+        - name: att
+          title: ATT
+          type: number
+        - name: se
+          title: SE
+          type: number
+        - name: lower
+          title: Lower
+          type: number
+          superTitle: Confidence interval
+        - name: upper
+          title: Upper
+          type: number
+          superTitle: Confidence interval
+        - name: p
+          title: p
+          type: number
+          format: zto,pvalue
+        - name: control
+          title: Comparison group
+          type: text
+        - name: nobs
+          title: Observations
+          type: integer
+        - name: ncl
+          title: Clusters
+          type: integer
+        - name: note
+          title: Note
+          type: text
+      refs:
+        - gardner2022
+        - did2s
+
+    - name: dynamic
+      title: Dynamic effects by event time (reference period = -1)
+      type: Table
+      rows: 0
+      clearWith: [plotPalette, plotCI, dep, id, time, treat, treatType, covs, cluster, weights, minE, maxE, ciLevel]
+      columns:
+        - name: e
+          title: Event time
+          type: integer
+        - name: est
+          title: Estimate
+          type: number
+        - name: se
+          title: SE
+          type: number
+        - name: lower
+          title: Lower
+          type: number
+          superTitle: Confidence interval
+        - name: upper
+          title: Upper
+          type: number
+          superTitle: Confidence interval
+        - name: p
+          title: p
+          type: number
+          format: zto,pvalue
+
+    - name: plot
+      title: Event study
+      type: Image
+      width: 640
+      height: 420
+      renderFun: .plot
+      clearWith: [plotPalette, plotCI, dep, id, time, treat, treatType, covs, cluster, weights, minE, maxE, ciLevel]
+
+    - name: code
+      title: Reproducible R code
+      type: Preformatted
+      visible: (showCode)
+
+    - name: notes
+      title: About this estimator
+      type: Html
+      visible: (showHelp)
+      refs:
+        - roth2023
+
+...

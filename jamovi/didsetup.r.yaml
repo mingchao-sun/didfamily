@@ -1,0 +1,71 @@
+---
+name:  didsetup
+title: Panel Structure Check
+jrs:   '1.1'
+
+items:
+    - name: guide
+      title: Data and setup guide
+      type: Html
+      visible: (showGuide)
+
+    - name: info
+      title: Panel check
+      type: Html
+
+    - name: checks
+      title: Panel checks
+      type: Table
+      rows: 0
+      clearWith: [plotPalette, dep, id, time, treat, treatType]
+      columns:
+        - name: check
+          title: Check
+          type: text
+        - name: status
+          title: Status
+          type: text
+        - name: result
+          title: Result
+          type: text
+      refs:
+        - roth2023
+
+
+    - name: cohorts
+      title: Treatment cohorts
+      type: Table
+      rows: 0
+      clearWith: [plotPalette, dep, id, time, treat, treatType]
+      columns:
+        - name: cohort
+          title: First treated period
+          type: text
+        - name: units
+          title: Units
+          type: integer
+        - name: share
+          title: Share of units
+          type: number
+          format: pc
+        - name: pre
+          title: Pre-treatment periods
+          type: integer
+        - name: post
+          title: Post-treatment periods
+          type: integer
+
+    - name: plot
+      title: Treatment status by unit and period
+      type: Image
+      width: 640
+      height: 480
+      renderFun: .plot
+      clearWith: [plotPalette, dep, id, time, treat, treatType]
+
+    - name: notes
+      title: What to look for
+      type: Html
+      visible: (showHelp)
+
+...

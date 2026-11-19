@@ -1,0 +1,89 @@
+title: Classic DiD (2x2)
+name: did22
+jus: '3.0'
+stage: 0
+compilerMode: tame
+children:
+  - type: VariableSupplier
+    persistentItems: false
+    permitted:
+      - numeric
+      - factor
+      - id
+    stretchFactor: 1
+    children:
+      - type: TargetLayoutBox
+        label: Outcome
+        children:
+          - type: VariablesListBox
+            name: dep
+            maxItemCount: 1
+            isTarget: true
+      - type: TargetLayoutBox
+        label: Treated group (0/1)
+        children:
+          - type: VariablesListBox
+            name: group
+            maxItemCount: 1
+            isTarget: true
+      - type: TargetLayoutBox
+        label: Period (two values)
+        children:
+          - type: VariablesListBox
+            name: period
+            maxItemCount: 1
+            isTarget: true
+      - type: TargetLayoutBox
+        label: Unit ID (optional, panel data)
+        children:
+          - type: VariablesListBox
+            name: id
+            maxItemCount: 1
+            isTarget: true
+      - type: TargetLayoutBox
+        label: Covariates
+        children:
+          - type: VariablesListBox
+            name: covs
+            isTarget: true
+  - type: LayoutBox
+    margin: large
+    children:
+      - type: CheckBox
+        name: ols
+      - type: CheckBox
+        name: dr
+      - type: CheckBox
+        name: drtrad
+      - type: CheckBox
+        name: ipw
+      - type: CheckBox
+        name: or
+  - type: LayoutBox
+    margin: large
+    children:
+      - type: TextBox
+        name: ciLevel
+        format: number
+  - type: CollapseBox
+    label: Plot style
+    collapsed: true
+    stretchFactor: 1
+    children:
+      - type: LayoutBox
+        margin: large
+        children:
+          - type: ComboBox
+            name: plotPalette
+  - type: CollapseBox
+    label: Notes and guide
+    collapsed: true
+    stretchFactor: 1
+    children:
+      - type: LayoutBox
+        margin: large
+        children:
+          - type: CheckBox
+            name: showHelp
+          - type: CheckBox
+            name: showGuide

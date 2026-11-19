@@ -1,0 +1,118 @@
+title: Stacked DiD
+name: didstacked
+jus: '3.0'
+stage: 0
+compilerMode: tame
+children:
+  - type: VariableSupplier
+    persistentItems: false
+    permitted:
+      - numeric
+      - factor
+      - id
+    stretchFactor: 1
+    children:
+      - type: TargetLayoutBox
+        label: Outcome
+        children:
+          - type: VariablesListBox
+            name: dep
+            maxItemCount: 1
+            isTarget: true
+      - type: TargetLayoutBox
+        label: Unit ID
+        children:
+          - type: VariablesListBox
+            name: id
+            maxItemCount: 1
+            isTarget: true
+      - type: TargetLayoutBox
+        label: Time period
+        children:
+          - type: VariablesListBox
+            name: time
+            maxItemCount: 1
+            isTarget: true
+      - type: TargetLayoutBox
+        label: Treatment variable
+        children:
+          - type: VariablesListBox
+            name: treat
+            maxItemCount: 1
+            isTarget: true
+      - type: TargetLayoutBox
+        label: Covariates (optional)
+        children:
+          - type: VariablesListBox
+            name: covs
+            isTarget: true
+      - type: TargetLayoutBox
+        label: Cluster variable (optional)
+        children:
+          - type: VariablesListBox
+            name: cluster
+            maxItemCount: 1
+            isTarget: true
+      - type: TargetLayoutBox
+        label: Sampling weights (optional)
+        children:
+          - type: VariablesListBox
+            name: weights
+            maxItemCount: 1
+            isTarget: true
+  - type: LayoutBox
+    margin: large
+    children:
+      - type: ComboBox
+        name: treatType
+  - type: CollapseBox
+    label: Event window and confidence level
+    collapsed: true
+    stretchFactor: 1
+    children:
+      - type: LayoutBox
+        margin: large
+        children:
+          - type: TextBox
+            name: minE
+            format: number
+          - type: TextBox
+            name: maxE
+            format: number
+          - type: TextBox
+            name: ciLevel
+            format: number
+  - type: CollapseBox
+    label: Additional output
+    collapsed: true
+    stretchFactor: 1
+    children:
+      - type: LayoutBox
+        margin: large
+        children:
+          - type: CheckBox
+            name: showCode
+  - type: CollapseBox
+    label: Plot style
+    collapsed: true
+    stretchFactor: 1
+    children:
+      - type: LayoutBox
+        margin: large
+        children:
+          - type: ComboBox
+            name: plotPalette
+          - type: ComboBox
+            name: plotCI
+  - type: CollapseBox
+    label: Notes and guide
+    collapsed: true
+    stretchFactor: 1
+    children:
+      - type: LayoutBox
+        margin: large
+        children:
+          - type: CheckBox
+            name: showHelp
+          - type: CheckBox
+            name: showGuide

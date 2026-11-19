@@ -1,0 +1,86 @@
+title: Dynamic DiD for Treatments that Switch
+name: dcdh
+jus: '3.0'
+stage: 0
+compilerMode: tame
+children:
+  - type: VariableSupplier
+    persistentItems: false
+    permitted:
+      - numeric
+      - factor
+      - id
+    stretchFactor: 1
+    children:
+      - type: TargetLayoutBox
+        label: Outcome
+        children:
+          - type: VariablesListBox
+            name: dep
+            maxItemCount: 1
+            isTarget: true
+      - type: TargetLayoutBox
+        label: Group ID
+        children:
+          - type: VariablesListBox
+            name: id
+            maxItemCount: 1
+            isTarget: true
+      - type: TargetLayoutBox
+        label: Time period
+        children:
+          - type: VariablesListBox
+            name: time
+            maxItemCount: 1
+            isTarget: true
+      - type: TargetLayoutBox
+        label: Treatment (0/1)
+        children:
+          - type: VariablesListBox
+            name: treat
+            maxItemCount: 1
+            isTarget: true
+  - type: CollapseBox
+    label: Estimation
+    collapsed: true
+    stretchFactor: 1
+    children:
+      - type: LayoutBox
+        margin: large
+        children:
+          - type: TextBox
+            name: effects
+            label: Number of effects
+            format: number
+          - type: TextBox
+            name: placebo
+            label: Number of placebos
+            format: number
+          - type: TextBox
+            name: level
+            label: Confidence level (%)
+            format: number
+  - type: CollapseBox
+    label: Plot style
+    collapsed: true
+    stretchFactor: 1
+    children:
+      - type: LayoutBox
+        margin: large
+        children:
+          - type: CheckBox
+            name: plot
+          - type: ComboBox
+            name: plotPalette
+  - type: CollapseBox
+    label: Notes and guide
+    collapsed: true
+    stretchFactor: 1
+    children:
+      - type: LayoutBox
+        margin: large
+        children:
+          - type: CheckBox
+            name: showHelp
+          - type: CheckBox
+            name: showGuide

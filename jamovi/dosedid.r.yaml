@@ -1,0 +1,88 @@
+---
+name:  dosedid
+title: Continuous Treatment DiD
+jrs:   '1.1'
+
+items:
+    - name: guide
+      title: Data and setup guide
+      type: Html
+      visible: (showGuide)
+
+    - name: info
+      title: Panel summary
+      type: Html
+
+    - name: summary
+      title: Average effects over all treated units
+      type: Table
+      rows: 0
+      clearWith: [plotPalette, dep, id, time, treat, dose, csControl, degree, knots, ciLevel]
+      columns:
+        - name: param
+          title: Parameter
+          type: text
+        - name: est
+          title: Estimate
+          type: number
+        - name: se
+          title: SE
+          type: number
+        - name: lower
+          title: Lower
+          type: number
+          superTitle: Confidence interval
+        - name: upper
+          title: Upper
+          type: number
+          superTitle: Confidence interval
+        - name: p
+          title: p
+          type: number
+          format: zto,pvalue
+        - name: note
+          title: Note
+          type: text
+      refs:
+        - callaway2024
+        - contdid
+
+
+    - name: curve
+      title: Dose-response at selected doses
+      type: Table
+      rows: 0
+      clearWith: [plotPalette, dep, id, time, treat, dose, csControl, degree, knots, ciLevel]
+      columns:
+        - name: dose
+          title: Dose
+          type: number
+        - name: att
+          title: ATT(d)
+          type: number
+        - name: att_se
+          title: SE
+          type: number
+          superTitle: Level effect
+        - name: acrt
+          title: ACRT(d)
+          type: number
+        - name: acrt_se
+          title: SE
+          type: number
+          superTitle: Marginal effect
+
+    - name: plot
+      title: Dose-response curves
+      type: Image
+      width: 560
+      height: 520
+      renderFun: .plot
+      clearWith: [plotPalette, dep, id, time, treat, dose, csControl, degree, knots, ciLevel]
+
+    - name: notes
+      title: How to read these results
+      type: Html
+      visible: (showHelp)
+
+...

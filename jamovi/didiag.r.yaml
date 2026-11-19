@@ -1,0 +1,197 @@
+---
+name:  didiag
+title: Bacon, Pre-trend and HonestDiD
+jrs:   '1.1'
+
+items:
+    - name: guide
+      title: Data and setup guide
+      type: Html
+      visible: (showGuide)
+
+    - name: info
+      title: Panel summary
+      type: Html
+
+    - name: bacon
+      title: Goodman-Bacon decomposition of the TWFE estimate
+      type: Table
+      visible: (bacon)
+      rows: 0
+      clearWith: [plotPalette, dep, id, time, treat, treatType]
+      columns:
+        - name: type
+          title: Comparison
+          type: text
+        - name: n
+          title: 2x2 comparisons
+          type: integer
+        - name: weight
+          title: Weight
+          type: number
+        - name: est
+          title: Average estimate
+          type: number
+      refs:
+        - goodmanbacon2021
+        - bacondecomp
+
+
+    - name: baconPlot
+      title: Bacon decomposition
+      type: Image
+      visible: (bacon)
+      width: 640
+      height: 400
+      renderFun: .plotBacon
+      clearWith: [plotPalette, dep, id, time, treat, treatType]
+
+    - name: weights
+      title: TWFE weights on treated observations
+      type: Table
+      visible: (weights)
+      rows: 0
+      clearWith: [plotPalette, dep, id, time, treat, treatType]
+      columns:
+        - name: group
+          title: Treatment cohort
+          type: text
+        - name: n
+          title: Treated obs.
+          type: integer
+        - name: weight
+          title: Total weight
+          type: number
+        - name: neg_n
+          title: Negative-weight obs.
+          type: integer
+        - name: neg_weight
+          title: Negative weight
+          type: number
+      refs:
+        - dechaisemartin2020
+
+
+    - name: pretest
+      title: "Joint test of pre-treatment effects (null: all equal zero)"
+      type: Table
+      visible: (pretest)
+      rows: 0
+      clearWith: [plotPalette, dep, id, time, treat, treatType, csControl, minE]
+      columns:
+        - name: method
+          title: Estimator
+          type: text
+        - name: stat
+          title: Wald chi-square
+          type: number
+        - name: df
+          title: df
+          type: integer
+        - name: p
+          title: p
+          type: number
+          format: zto,pvalue
+        - name: note
+          title: Note
+          type: text
+      refs:
+        - roth2022
+        - callaway2021
+
+
+    - name: honest
+      title: HonestDiD robust confidence intervals
+      type: Table
+      visible: (honest)
+      rows: 0
+      clearWith: [plotPalette, dep, id, time, treat, treatType, honestBase, honestTarget, honestMbar, csControl, minE, maxE, ciLevel]
+      columns:
+        - name: spec
+          title: Allowed violation of parallel trends
+          type: text
+        - name: lower
+          title: Lower
+          type: number
+          superTitle: Confidence interval
+        - name: upper
+          title: Upper
+          type: number
+          superTitle: Confidence interval
+        - name: note
+          title: Note
+          type: text
+      refs:
+        - rambachan2023
+        - HonestDiD
+
+
+    - name: honestPlot
+      title: Sensitivity of the effect to violations of parallel trends
+      type: Image
+      visible: (honest)
+      width: 640
+      height: 400
+      renderFun: .plotHonest
+      clearWith: [plotPalette, dep, id, time, treat, treatType, honestBase, honestTarget, honestMbar, csControl, minE, maxE, ciLevel]
+
+    - name: ptTable
+      title: Power of the pre-trend test
+      type: Table
+      visible: (ptpower)
+      rows: 0
+      clearWith: [plotPalette, dep, id, time, treat, treatType, ptBase, ptSlope, csControl, minE, maxE]
+      columns:
+        - name: item
+          title: ''
+          type: text
+        - name: value
+          title: ''
+          type: number
+        - name: note
+          title: Note
+          type: text
+      refs:
+        - roth2022
+
+    - name: ptPost
+      title: Violation of parallel trends that the test misses (bias it would put in the post-treatment effects)
+      type: Table
+      visible: (ptpower)
+      rows: 0
+      clearWith: [plotPalette, dep, id, time, treat, treatType, ptBase, ptSlope, csControl, minE, maxE]
+      columns:
+        - name: e
+          title: Event time
+          type: integer
+        - name: est
+          title: Estimated effect
+          type: number
+        - name: se
+          title: Std. error
+          type: number
+        - name: b50
+          title: Bias, slope with 50% power
+          type: number
+        - name: b80
+          title: Bias, slope with 80% power
+          type: number
+        - name: bh
+          title: Bias, hypothesized slope
+          type: number
+
+    - name: ptPlot
+      title: Event study and trends the pre-test would miss
+      type: Image
+      visible: (ptpower)
+      width: 640
+      height: 400
+      renderFun: .plotPt
+      clearWith: [plotPalette, dep, id, time, treat, treatType, ptBase, ptSlope, csControl, minE, maxE]
+
+    - name: notes
+      title: How to read these diagnostics
+      type: Html
+      visible: (showHelp)
+
+...

@@ -1,0 +1,122 @@
+---
+name:  dosedid
+title: Continuous Treatment DiD
+menuGroup: DiD
+menuSubgroup: Diagnostics and extensions
+menuTitle: Continuous Treatment DiD
+version: '1.0.0'
+jas: '1.2'
+
+description:
+    main: 'Difference-in-differences with a continuous treatment: dose-response ATT(d) and the marginal effect ACRT(d) with their averages.'
+    R:
+        dontrun: true
+        usage: |
+            # d is a data frame with one row per unit and period
+            dosedid(data = d, dep = 'y', id = 'id', time = 'year', treat = 'g', dose = 'dose')
+
+options:
+    - name: data
+      type: Data
+
+    - name: dep
+      title: Outcome
+      type: Variable
+      permitted: [numeric]
+      description:
+          R: 'a string naming the outcome variable in `data`'
+
+    - name: id
+      title: Unit ID
+      type: Variable
+      permitted: [numeric, factor, id]
+      description:
+          R: 'a string naming the unit identifier variable in `data`'
+
+    - name: time
+      title: Time period
+      type: Variable
+      permitted: [numeric]
+      description:
+          R: 'a string naming the period variable in `data`; values must be integers (a year or a period number)'
+
+    - name: treat
+      title: First treated period
+      type: Variable
+      permitted: [numeric, factor, id]
+      description:
+          R: 'a string naming the treatment variable in `data`: a 0/1 indicator that never turns off, or the first treated period (see `treatType`)'
+
+    - name: dose
+      title: Dose (constant within unit, 0 if untreated)
+      type: Variable
+      permitted: [numeric]
+      description:
+          R: 'a string naming the dose variable: the amount of treatment a unit receives once treated, constant within units, 0 if untreated'
+
+    - name: csControl
+      title: Control group
+      type: List
+      options:
+        - title: Never treated
+          name: nevertreated
+        - title: Not yet treated
+          name: notyettreated
+      default: nevertreated
+      description:
+          R: '`''nevertreated''` (default) or `''notyettreated''`, the control group used by Callaway and Sant''Anna'
+
+    - name: degree
+      title: Spline degree
+      type: Integer
+      min: 1
+      max: 5
+      default: 1
+      description:
+          R: 'the degree of the B-spline dose-response (default 1)'
+
+    - name: knots
+      title: Number of interior knots
+      type: Integer
+      min: 0
+      max: 8
+      default: 0
+      description:
+          R: 'the number of interior knots of the B-spline (default 0)'
+
+    - name: ciLevel
+      title: Confidence level (%)
+      type: Number
+      min: 50
+      max: 99.9
+      default: 95
+      description:
+          R: 'the confidence level in percent (default 95)'
+
+    - name: plotPalette
+      title: Plot colors
+      type: List
+      options:
+        - title: Colors (colour-blind safe)
+          name: color
+        - title: Grayscale (for printing)
+          name: gray
+      default: color
+      description:
+          R: '`''color''` (default, colour-blind safe) or `''gray''` (shades, shapes and line types for printing)'
+
+    - name: showHelp
+      title: Method notes
+      type: Bool
+      default: false
+      description:
+          R: '`TRUE` or `FALSE` (default), show notes on what the method does and how to read the results'
+
+    - name: showGuide
+      title: Data and setup guide
+      type: Bool
+      default: false
+      description:
+          R: '`TRUE` or `FALSE` (default), show a guide to the variables and the data format'
+
+...

@@ -1,0 +1,158 @@
+---
+name:  didtwfe
+title: Two-Way Fixed Effects (TWFE)
+menuGroup: DiD
+menuSubgroup: Estimators
+menuTitle: Two-Way Fixed Effects (TWFE)
+version: '1.0.0'
+jas: '1.2'
+
+description:
+    main: 'Two-way fixed effects regression of the outcome on the treatment indicator with unit and period fixed effects, static and event study, with a warning that TWFE can be biased under staggered adoption.'
+    R:
+        dontrun: true
+        usage: |
+            # d is a data frame with one row per unit and period
+            didtwfe(data = d, dep = 'y', id = 'id', time = 'year', treat = 'D')
+
+options:
+    - name: data
+      type: Data
+
+    - name: dep
+      title: Outcome
+      type: Variable
+      permitted: [numeric]
+      description:
+          R: 'a string naming the outcome variable in `data`'
+
+    - name: id
+      title: Unit ID
+      type: Variable
+      permitted: [numeric, factor, id]
+      description:
+          R: 'a string naming the unit identifier variable in `data`'
+
+    - name: time
+      title: Time period
+      type: Variable
+      permitted: [numeric]
+      description:
+          R: 'a string naming the period variable in `data`; values must be integers (a year or a period number)'
+
+    - name: treat
+      title: Treatment variable
+      type: Variable
+      permitted: [numeric, factor, id]
+      description:
+          R: 'a string naming the treatment variable in `data`: a 0/1 indicator that never turns off, or the first treated period (see `treatType`)'
+
+    - name: covs
+      title: Covariates
+      type: Variables
+      permitted: [numeric, factor]
+      default: null
+      description:
+          R: 'a vector of strings naming covariates in `data` (optional); text and factor variables are dummy-coded'
+
+    - name: cluster
+      title: Cluster variable (optional)
+      type: Variable
+      permitted: [numeric, factor, id]
+      default: null
+      description:
+          R: 'a string naming a cluster variable that is constant within units (optional); by default standard errors are clustered by unit'
+
+    - name: weights
+      title: Sampling weights (optional)
+      type: Variable
+      permitted: [numeric]
+      default: null
+      description:
+          R: 'a string naming a positive weight variable that is constant within units (optional), for example a baseline population'
+
+    - name: treatType
+      title: Treatment variable is
+      type: List
+      options:
+        - title: Treatment indicator D (0/1)
+          name: indicator
+        - title: First treated period (0 or missing = never)
+          name: cohort
+      default: indicator
+      description:
+          R: '`''indicator''` (default) if `treat` is a 0/1 treatment indicator, or `''cohort''` if it holds the first treated period (0 or missing = never treated)'
+
+    - name: showHelp
+      title: Method notes
+      type: Bool
+      default: false
+      description:
+          R: '`TRUE` or `FALSE` (default), show notes on what the method does and how to read the results'
+
+    - name: showGuide
+      title: Data and setup guide
+      type: Bool
+      default: false
+      description:
+          R: '`TRUE` or `FALSE` (default), show a guide to the variables and the data format'
+
+    - name: showCode
+      title: Show reproducible R code
+      type: Bool
+      default: false
+      description:
+          R: '`TRUE` or `FALSE` (default), show an R script that reproduces the results'
+
+    - name: minE
+      title: Event window, from
+      type: Integer
+      min: -50
+      max: -1
+      default: -4
+      description:
+          R: 'the most negative event time shown (default -4)'
+
+    - name: maxE
+      title: Event window, to
+      type: Integer
+      min: 0
+      max: 50
+      default: 4
+      description:
+          R: 'the largest event time shown (default 4)'
+
+    - name: ciLevel
+      title: Confidence level (%)
+      type: Number
+      min: 50
+      max: 99.9
+      default: 95
+      description:
+          R: 'the confidence level in percent (default 95)'
+
+    - name: plotPalette
+      title: Plot colors
+      type: List
+      options:
+        - title: Colors (colour-blind safe)
+          name: color
+        - title: Grayscale (for printing)
+          name: gray
+      default: color
+      description:
+          R: '`''color''` (default, colour-blind safe) or `''gray''` (shades, shapes and line types for printing)'
+
+    - name: plotCI
+      title: Show confidence intervals as
+      type: List
+      options:
+        - title: Error bars
+          name: bars
+        - title: Shaded bands
+          name: ribbon
+      default: bars
+      description:
+          R: '`''bars''` (default) or `''ribbon''`, draw confidence intervals as error bars or shaded bands'
+
+...

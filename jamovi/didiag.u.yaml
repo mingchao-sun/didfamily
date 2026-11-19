@@ -1,0 +1,141 @@
+title: Bacon, Pre-trend and HonestDiD
+name: didiag
+jus: '3.0'
+stage: 0
+compilerMode: tame
+children:
+  - type: VariableSupplier
+    persistentItems: false
+    permitted:
+      - numeric
+      - factor
+      - id
+    stretchFactor: 1
+    children:
+      - type: TargetLayoutBox
+        label: Outcome
+        children:
+          - type: VariablesListBox
+            name: dep
+            maxItemCount: 1
+            isTarget: true
+      - type: TargetLayoutBox
+        label: Unit ID
+        children:
+          - type: VariablesListBox
+            name: id
+            maxItemCount: 1
+            isTarget: true
+      - type: TargetLayoutBox
+        label: Time period
+        children:
+          - type: VariablesListBox
+            name: time
+            maxItemCount: 1
+            isTarget: true
+      - type: TargetLayoutBox
+        label: Treatment variable
+        children:
+          - type: VariablesListBox
+            name: treat
+            maxItemCount: 1
+            isTarget: true
+  - type: LayoutBox
+    margin: large
+    children:
+      - type: ComboBox
+        name: treatType
+  - type: CollapseBox
+    label: Diagnostics
+    collapsed: true
+    stretchFactor: 1
+    children:
+      - type: LayoutBox
+        margin: large
+        children:
+          - type: CheckBox
+            name: bacon
+          - type: CheckBox
+            name: weights
+          - type: CheckBox
+            name: pretest
+  - type: CollapseBox
+    label: Sensitivity analysis
+    collapsed: true
+    stretchFactor: 1
+    children:
+      - type: LayoutBox
+        margin: large
+        children:
+          - type: CheckBox
+            name: honest
+            children:
+              - type: ComboBox
+                name: honestBase
+                enable: (honest)
+              - type: ComboBox
+                name: honestTarget
+                enable: (honest)
+              - type: TextBox
+                name: honestMbar
+                format: number
+                enable: (honest)
+  - type: CollapseBox
+    label: Pre-trend power
+    collapsed: true
+    stretchFactor: 1
+    children:
+      - type: LayoutBox
+        margin: large
+        children:
+          - type: CheckBox
+            name: ptpower
+            children:
+              - type: ComboBox
+                name: ptBase
+                enable: (ptpower)
+              - type: TextBox
+                name: ptSlope
+                format: number
+                enable: (ptpower)
+  - type: CollapseBox
+    label: Event window and settings
+    collapsed: true
+    stretchFactor: 1
+    children:
+      - type: LayoutBox
+        margin: large
+        children:
+          - type: ComboBox
+            name: csControl
+          - type: TextBox
+            name: minE
+            format: number
+          - type: TextBox
+            name: maxE
+            format: number
+          - type: TextBox
+            name: ciLevel
+            format: number
+  - type: CollapseBox
+    label: Plot style
+    collapsed: true
+    stretchFactor: 1
+    children:
+      - type: LayoutBox
+        margin: large
+        children:
+          - type: ComboBox
+            name: plotPalette
+  - type: CollapseBox
+    label: Notes and guide
+    collapsed: true
+    stretchFactor: 1
+    children:
+      - type: LayoutBox
+        margin: large
+        children:
+          - type: CheckBox
+            name: showHelp
+          - type: CheckBox
+            name: showGuide

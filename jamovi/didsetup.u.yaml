@@ -1,0 +1,69 @@
+title: Panel Structure Check
+name: didsetup
+jus: '3.0'
+stage: 0
+compilerMode: tame
+children:
+  - type: VariableSupplier
+    persistentItems: false
+    permitted:
+      - numeric
+      - factor
+      - id
+    stretchFactor: 1
+    children:
+      - type: TargetLayoutBox
+        label: Outcome (optional)
+        children:
+          - type: VariablesListBox
+            name: dep
+            maxItemCount: 1
+            isTarget: true
+      - type: TargetLayoutBox
+        label: Unit ID
+        children:
+          - type: VariablesListBox
+            name: id
+            maxItemCount: 1
+            isTarget: true
+      - type: TargetLayoutBox
+        label: Time period
+        children:
+          - type: VariablesListBox
+            name: time
+            maxItemCount: 1
+            isTarget: true
+      - type: TargetLayoutBox
+        label: Treatment variable
+        children:
+          - type: VariablesListBox
+            name: treat
+            maxItemCount: 1
+            isTarget: true
+  - type: LayoutBox
+    margin: large
+    children:
+      - type: ComboBox
+        name: treatType
+  - type: CollapseBox
+    label: Plot style
+    collapsed: true
+    stretchFactor: 1
+    children:
+      - type: LayoutBox
+        margin: large
+        children:
+          - type: ComboBox
+            name: plotPalette
+  - type: CollapseBox
+    label: Notes and guide
+    collapsed: true
+    stretchFactor: 1
+    children:
+      - type: LayoutBox
+        margin: large
+        children:
+          - type: CheckBox
+            name: showHelp
+          - type: CheckBox
+            name: showGuide
