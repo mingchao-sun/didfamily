@@ -2,7 +2,7 @@
 
 A jamovi module for running several modern DiD estimators on the same panel and seeing where they
 agree and disagree, with diagnostics, sensitivity analysis and reproducible R code.
-Chinese summary: [README.zh.md](README.zh.md).
+Chinese summary: [README.zh.md](README.zh.md). Japanese summary: [README.ja.md](README.ja.md).
 
 ## Analyses (jamovi menu: DiD)
 
