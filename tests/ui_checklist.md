@@ -1,4 +1,4 @@
-# didfamily: checklist for testing in jamovi (new in 0.6.0)
+# didfamily: checklist for testing in jamovi
 
 Menu: DiD. Install: `jmvtools::install(home = "C:/Program Files/jamovi 28.17.0.0")`.
 Open sample data from File > Open > Data Library > Difference-in-Differences Family.
@@ -12,7 +12,7 @@ Joint tests: placebos p = 0.57; effects p < .001. The plot shows placebos (orang
 Then: effects 5 and placebos 3; confidence level 90; Plot colors "Grayscale"; untick Event study plot; tick Method notes and Data and setup guide.
 Messages to try: a treatment with values 0/1/2 ("must be binary"); a time variable with decimals; no variable switching (set a copy of D to all 0).
 
-## 2. The older analyses (spot check after the 0.6.0 reinstall)
+## 2. The older analyses (spot check)
 - Compare DiD Estimators on "Minimum wage and teen employment (mpdta)": Outcome `lemp`, Unit `countyreal`, Time `year`, Treatment `first.treat` as First treated period; the table has six estimators; TWFE -0.0365.
 - Panel Structure Check on the same data lists the cohorts 2004, 2006, 2007.
 - One estimator from the Estimators sub-menu (for example Callaway & Sant'Anna) gives overall ATT -0.040.

@@ -1,6 +1,6 @@
 # didfamily:在 jamovi 中比较各种双重差分(DiD)估计量
 
-用同一份面板数据一次设定,并排比较多种现代 DiD 估计量的结果,并提供诊断、敏感性分析和可复现的 R 代码。版本 0.5.0(开发中)。
+用同一份面板数据一次设定,并排比较多种现代 DiD 估计量的结果,并提供诊断、敏感性分析和可复现的 R 代码。
 
 ## 十一个分析(jamovi 菜单:DiD,按工作流程排列并分组)
 
@@ -43,3 +43,12 @@
 - 界面标签、表格与选项已提供日文和简体中文翻译,说明性文字和提示信息仅有英文。
 
 更多细节见英文版 [README.md](README.md) 与 `dev/NOTES.md`。
+
+## 安装
+- **jamovi 模块库**:在 jamovi 右上角打开模块按钮,进入 *jamovi library*,搜索并安装(模块上架后)。
+- **侧载**:下载 `.jmo` 文件,在同一菜单选 *Install from file*。`.jmo` 只适用于构建它的操作系统、处理器类型和 jamovi 版本。
+- **从源码**:需要 R 和 `jmvtools`:`jmvtools::install(home = "C:/Program Files/jamovi 28.17.0.0")`(路径按本机 jamovi 修改)。
+
+## 引用与许可
+引用:Sun, M. *didfamily* (jamovi module). https://github.com/mingchao-sun/didfamily 。请同时引用所用估计量的原始文献(输出中列出)。
+许可:见 `DESCRIPTION`(GPL);第三方代码与数据见 `NOTICE`。问题与建议:https://github.com/mingchao-sun/didfamily/issues

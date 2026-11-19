@@ -2,7 +2,7 @@
 
 A jamovi module for running several modern DiD estimators on the same panel and seeing where they
 agree and disagree, with diagnostics, sensitivity analysis and reproducible R code.
-Version 0.5.0 (development). Chinese summary: [README.zh.md](README.zh.md).
+Chinese summary: [README.zh.md](README.zh.md).
 
 ## Analyses (jamovi menu: DiD)
 
@@ -80,13 +80,14 @@ Every analysis follows the plot theme chosen in jamovi's Plots tab for the base 
 section: colour-blind-safe colours or grayscale (shades, point shapes and line types, for black-and-white printing);
 for the event-study plots also error bars or shaded bands, and the spacing between estimators.
 
-## Install (development)
-Requires jamovi 2.6+ and the jamovi compiler (`jmvtools`):
+## Install
+- **jamovi library**: in jamovi open the modules button (top right), *jamovi library*, find *Difference-in-Differences Family* and install (once the module is listed).
+- **Sideload**: download the `.jmo` file and use *Install from file* in the same menu. A `.jmo` works only on the operating system, processor type and jamovi version it was built for.
+- **From source** (needs R and the jamovi compiler `jmvtools`; adjust the path to your jamovi folder):
 ```r
-jmvtools::install(home = "C:/Program Files/jamovi 28.17.0.0")   # adjust to your jamovi folder
+jmvtools::install(home = "C:/Program Files/jamovi 28.17.0.0")
 ```
-This builds the module, bundles its R dependencies (~130 MB) and installs it into jamovi. A prebuilt
-`.jmo` can be installed from jamovi's module library (sideload).
+The build bundles the R dependencies (about 130 MB).
 
 ## Validation
 `dev/test_*.R` hold ~300 checks: simulated designs with known effects, exact identities (Bacon weights,
@@ -96,10 +97,8 @@ replicated units (a weight of w equals w copies of the unit, for every weighted 
 the variable types stored in the `.omv` files.
 
 ## Known limitations
-- No dCDH estimator (`DIDmultiplegtDYN` needs `polars`, absent from jamovi's package snapshot), no synthetic DiD
-  (`synthdid` is GitHub-only), no `fect` (its FEct estimator equals the imputation estimators already included).
-- Wooldridge's extended TWFE is not listed separately: with never-treated controls it reproduces the imputation
-  estimates, and with leads added it equals Sun-Abraham.
+- No synthetic DiD in this module (see `scmfamily`) and no `fect` (its FEct estimator equals the imputation estimators already included).
+- Treatment switching on and off uses an own implementation of de Chaisemartin and D'Haultfoeuille (2024) because `DIDmultiplegtDYN` needs `polars`, absent from jamovi's package snapshot; it reproduces the package (checked in `dev/test_dcdh.R`).
 - No anticipation periods and no user-chosen reference period (event time is relative to e = -1).
 - Sampling weights exist only in "Compare DiD Estimators" (not in the diagnostics, DDD, 2x2 or continuous-treatment analyses).
 - Panel data only: repeated cross-sections of individuals with a state-level policy must first be collapsed to unit-period cells.
@@ -122,3 +121,9 @@ the variable types stored in the `.omv` files.
   (see each header for the library-path setup); `dev/edge_case.R` (one odd dataset per process, to catch R crashes) and
   `dev/perf.R` (timing: 100k rows take about 30 s for all estimators). Notes and findings: `dev/NOTES.md`.
 - Translations: `jamovi/i18n/*.po`; `dev/fill_po.py` holds the translation table.
+
+## How to cite
+Sun, M. *didfamily: Difference-in-Differences Family for jamovi* (jamovi module). https://github.com/mingchao-sun/didfamily. Please also cite the papers behind the estimators you use (listed in the output).
+
+## License
+GPL-2 or GPL-3, as stated in `DESCRIPTION`; third-party code and data are listed in `NOTICE`. Bug reports and suggestions: https://github.com/mingchao-sun/didfamily/issues
